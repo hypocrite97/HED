@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/mui.indexedlist.css" rel="stylesheet" />
+		<style>
+			html,
+			body {
+				height: 100%;
+				overflow: hidden;
+			}
+			
+			.mui-bar {
+				-webkit-box-shadow: none;
+				box-shadow: none;
+			}
+			
+			/*img {
+				height: 25px;
+				padding: 1px 5px;
+				margin: -5px 0px;
+			}*/
+			
+			.mui-indexed-list-bar {
+				background-color: white;
+			}
+			
+			header {
+				top: 0px;
+			}
+		</style>
+		<script type="text/javascript">
+			// mui.init()
+			var count = 0;
+			// var a=document.getElementsByClassName("mui-btn mui-btn-green"); 
+			function change() {
+				if (count == 0) {
+					var a=document.getElementById("ts"); 
+					a.style.color = "green";
+					a.style.backgroundColor = "whitesmoke";
+					a.innerHTML = "已关注";
+					count++;
+				} else {
+					alert("取消关注成功！")
+					var a=document.getElementById("ts"); 
+					a.style.color = "white";
+					a.style.backgroundColor = "#4CD964";
+					a.innerHTML = "关注";
+					count = 0;
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">通讯录列表</h1>
+		</header>
+		<div class="mui-content">
+			<div id='list' class="mui-indexed-list">
+				<div class="mui-indexed-list-search mui-input-row mui-search">
+					<input type="search" class="mui-input-clear mui-indexed-list-search-input" placeholder="搜索">
+				</div>
+
+				<div class="mui-indexed-list-alert"></div>
+				<div class="mui-indexed-list-inner">
+					<div class="mui-indexed-list-empty-alert">没有数据</div>
+
+					<ul class="mui-table-view">
+						<li data-value="AKU" data-tags="AKeSu" class="mui-table-view-cell mui-indexed-list-item">
+
+							<div class="mui-card-header mui-card-media">
+								<img id="cd" src="img/12.jpg" style="width:12%;margin-left: -14px; border-radius:20px;" />
+								<div class="mui-media-body" style="float:left;margin-left: 4%;">
+									大声喊出
+									<p>王俊凯</p>
+								</div>
+								<div class="aaa" style="float:right;">
+									<button id="ts" type="button" style="border-radius:10px;margin-left: 50%; width: 70px;" class="mui-btn mui-btn-green" onclick="change()">关注</button>
+								</div>
+							</div>
+						</li>
+						<li data-value="NGQ" data-tags="ALiKunSha" class="mui-table-view-cell mui-indexed-list-item">
+							<div class="mui-card-header mui-card-media">
+								<img id="cd" src="img/11.jpg" style="width:12%;margin-left: -14px; border-radius:20px;" />
+								<div class="mui-media-body" style="float:left;margin-left: 4%;">
+									单身狗
+									<p>安大娜</p>
+								</div>
+								<div class="aaa" style="float:right;">
+									<button id="ts" type="button" style="border-radius:10px;margin-left: 50%; width: 70px;" class="mui-btn mui-btn-green" onclick="change()">关注</button>
+								</div>
+							</div>
+						</li>
+						<li data-value="AKU" data-tags="AKeSu" class="mui-table-view-cell mui-indexed-list-item">
+
+							<div class="mui-card-header mui-card-media">
+								<img id="cd" src="img/12.jpg" style="width:12%;margin-left: -14px; border-radius:20px;" />
+								<div class="mui-media-body" style="float:left;margin-left: 4%;">
+									随心而动
+									<p>王俊凯</p>
+								</div>
+								<div class="aaa" style="float:right;">
+									<button id="ts" type="button" style="border-radius:10px;margin-left: 50%; width: 70px;" class="mui-btn mui-btn-green" onclick="change()">关注</button>
+								</div>
+							</div>
+						</li>
+						<li data-value="AKU" data-tags="AKeSu" class="mui-table-view-cell mui-indexed-list-item">
+
+							<div class="mui-card-header mui-card-media">
+								<img id="cd" src="img/12.jpg" style="width:12%;margin-left: -14px; border-radius:20px;" />
+								<div class="mui-media-body" style="float:left;margin-left: 4%;">
+									随心而动
+									<p>王俊凯</p>
+								</div>
+								<div class="aaa" style="float:right;">
+									<button id="ts" type="button" style="border-radius:10px;margin-left: 50%; width: 70px;" class="mui-btn mui-btn-green" onclick="change()">关注</button>
+								</div>
+							</div>
+						</li>
+						<li data-value="AKU" data-tags="AKeSu" class="mui-table-view-cell mui-indexed-list-item">
+
+							<div class="mui-card-header mui-card-media">
+								<img id="cd" src="img/12.jpg" style="width:12%;margin-left: -14px; border-radius:20px;" />
+								<div class="mui-media-body" style="float:left;margin-left: 4%;">
+									随心而动
+									<p>王俊凯</p>
+								</div>
+								<div class="aaa" style="float:right;">
+									<button id="ts" type="button" style="border-radius:10px;margin-left: 50%; width: 70px;" class="mui-btn mui-btn-green" onclick="change()">关注</button>
+								</div>
+							</div>
+						</li>
+						<li data-value="AKU" data-tags="AKeSu" class="mui-table-view-cell mui-indexed-list-item">
+
+							<div class="mui-card-header mui-card-media">
+								<img id="cd" src="img/12.jpg" style="width:12%;margin-left: -14px; border-radius:20px;" />
+								<div class="mui-media-body" style="float:left;margin-left: 4%;">
+									随心而动
+									<p>王俊凯</p>
+								</div>
+								<div class="aaa" style="float:right;">
+									<button id="ts" type="button" style="border-radius:10px;margin-left: 50%; width: 70px;" class="mui-btn mui-btn-green" onclick="change()">关注</button>
+								</div>
+							</div>
+						</li>
+						<li data-value="AKU" data-tags="AKeSu" class="mui-table-view-cell mui-indexed-list-item">
+
+							<div class="mui-card-header mui-card-media">
+								<img id="cd" src="img/12.jpg" style="width:12%;margin-left: -14px; border-radius:20px;" />
+								<div class="mui-media-body" style="float:left;margin-left: 4%;">
+									随心而动
+									<p>王俊凯</p>
+								</div>
+								<div class="aaa" style="float:right;">
+									<button id="ts" type="button" style="border-radius:10px;margin-left: 50%; width: 70px;" class="mui-btn mui-btn-green" onclick="change()">关注</button>
+								</div>
+							</div>
+						</li>
+						<li data-value="AKU" data-tags="AKeSu" class="mui-table-view-cell mui-indexed-list-item">
+
+							<div class="mui-card-header mui-card-media">
+								<img id="cd" src="img/12.jpg" style="width:12%;margin-left: -14px; border-radius:20px;" />
+								<div class="mui-media-body" style="float:left;margin-left: 4%;">
+									随心而动
+									<p>王俊凯</p>
+								</div>
+								<div class="aaa" style="float:right;">
+									<button id="ts" type="button" style="border-radius:10px;margin-left: 50%; width: 70px;" class="mui-btn mui-btn-green" onclick="change()">关注</button>
+								</div>
+							</div>
+						</li>
+						<li data-value="AKU" data-tags="AKeSu" class="mui-table-view-cell mui-indexed-list-item">
+
+							<div class="mui-card-header mui-card-media">
+								<img id="cd" src="img/12.jpg" style="width:12%;margin-left: -14px; border-radius:20px;" />
+								<div class="mui-media-body" style="float:left;margin-left: 4%;">
+									随心而动
+									<p>王俊凯</p>
+								</div>
+								<div class="aaa" style="float:right;">
+									<button id="ts" type="button" style="border-radius:10px;margin-left: 50%; width: 70px;" class="mui-btn mui-btn-green" onclick="change()">关注</button>
+								</div>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script src="js/mui.indexedlist.js"></script>
+		
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+			mui.ready(function() {
+				//				var header = document.querySelector('header.mui-bar');
+				var header = document.querySelector('通讯录列表');
+				var list = document.getElementById('list');
+				//calc hieght
+				//				list.style.height = (document.body.offsetHeight - header.offsetHeight) + 'px';
+				list.style.height = (document.body.offsetHeight) + 'px';
+				//create
+				window.indexedList = new mui.IndexedList(list);
+			});
+		</script>
+	</body>
+
+</html>

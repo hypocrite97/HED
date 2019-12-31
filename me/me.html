@@ -1,0 +1,274 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.css" rel="stylesheet" />
+		<style type="text/css">
+			body {
+				background-color: #555555;
+			}
+
+			.mui-content {
+				background-color: #555555;
+			}
+
+			.round_icon {
+				width: 12%;
+				display: flex;
+				border-radius: 50%;
+				align-items: center;
+				justify-content: center;
+				overflow: hidden;
+			}
+
+			.mui-table-view-cell {
+				height: 58px;
+			}
+
+			.mui-title {
+				text-align: left;
+			}
+
+			.mui-bar .mui-title {
+				right: 115px;
+				left: 20px;
+			}
+
+			.mui-title-img {
+				margin: 7px;
+				margin-top: 10px;
+				width: 23px;
+			}
+
+			a {
+				line-height: 38px;
+			}
+
+			.mui-card {
+				border-radius: 7px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<script src="js/mui.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<header class="mui-bar mui-bar-nav">
+			<h1 class="mui-title">我</h1>
+			<!-- 设置 -->
+			<img id="set" class="mui-title-img" align="right" src="img/set.png" />
+			<!-- 信息 -->
+			<img id="information" class="mui-title-img" align="right" src="img/information.png" />
+			<!-- 扫一扫 -->
+			<img id="scan" class="mui-title-img" align="right" src="img/scan.png" />
+		</header>
+		<div class="mui-content">
+			<!-- 第一块 -->
+			<div class="mui-card" style="margin-bottom: 1px;">
+				<div style="margin-top: 15px; margin-bottom: 8px;">
+					<a style="margin-left: 15px; color: #000000;">累计运动时长</a>
+					<a style="margin-left: 190px; color: #70C6AC;">运动历史</a>
+				</div>
+				<div>
+					<a style="margin-left: 15px; color: #000000; font-weight: 700; font-size: 35px;">1529</a>
+					<a style="margin-left: 9px; color: #70C6AC;">分钟</a>
+				</div>
+				<div>
+					<a style="margin-left: 15px; color: #70C6AC;">消耗(千卡)</a>
+					<a style="margin-left: 85px; color: #70C6AC;">累计(天)</a>
+					<a style="margin-left: 82px; color: #70C6AC;">连续(天)</a>
+				</div>
+				<div style="margin-top: -8px; margin-bottom: 9px;">
+					<a style="margin-left: 15px; color: #000000; font-weight: 700; font-size: larger;">12685</a>
+					<a style="margin-left: 103px; color: #000000; font-weight: 700; font-size: larger;">279</a>
+					<a style="margin-left: 105px; color: #000000; font-weight: 700; font-size: larger;">35</a>
+				</div>
+			</div>
+			<!-- 第二块 -->
+			<div>
+				<!-- 第二块左一 -->
+				<div class="mui-card" style="margin-right: 0px; float:left;width:46%;background-color: rgb(116,146,206)">
+					<div style="margin-top: 10px; margin-bottom: 10px;">
+						<div style="margin-bottom: 10px;">
+							<a style="margin-left: 15px; color: white;"><img src="img/sx/bbt.png" style="margin-right: 7px; margin-bottom: -10px; width: 30px;height: 30px;" />健身</a>
+						</div>
+						<div>
+							<a style="margin-left: 15px; color: white; font-weight: 700; font-size: 25px;">520</a>
+							<a style="margin-left: 7px; color: rgb(180,198,229)">分钟</a>
+						</div>
+						<div style="margin-top: 19px;">
+							<a style="margin-left: 15px; color: white;">累计消耗</a>
+						</div>
+						<div style="margin-top: -4px; margin-bottom: 9px;">
+							<a style="margin-left: 15px; color: white; font-weight: 700; font-size: larger;">1620</a>
+							<a style="margin-left: 7px; color: rgb(180,198,229);">千卡</a>
+						</div>
+					</div>
+				</div>
+				<!-- 第二块右一 -->
+				<div class="mui-card" style="margin-left: 0px; float:right;width:46%;">
+					<div style="margin-top: 8px; margin-bottom: 2px;">
+						<div style="margin-bottom: 8px;">
+							<a style="margin-left: 15px; color: #000000;"><img src="img/sx/bg.png" style="margin-right: 7px; margin-bottom: -10px; width: 30px;height: 30px;" />跑步</a>
+						</div>
+						<div style="margin-top: -2px;">
+							<a style="margin-left: 15px; color: #000000; font-weight: 700; font-size: 25px;">17.35</a>
+							<a style="margin-left: 7px; color: #70C6AC;">公里</a>
+						</div>
+					</div>
+				</div>
+				<!-- 第二块右二 -->
+				<div class="mui-card" style="margin-left: 0px; float:right;width:46%;margin-top: 1px;">
+					<div style="margin-top: 8px; margin-bottom: 2px;">
+						<div style="margin-bottom: 8px;">
+							<a style="margin-left: 15px; color: #000000;"><img src="img/sx/hfb.png" style="margin-right: 7px; margin-bottom: -10px; width: 30px;height: 30px;" />瑜伽</a>
+						</div>
+						<div style="margin-top: -2px;">
+							<a style="margin-left: 15px; color: #000000; font-weight: 700; font-size: 25px;">67</a>
+							<a style="margin-left: 7px; color: #70C6AC;">分钟</a>
+						</div>
+					</div>
+				</div>
+				<!-- 第二块左二 -->
+				<div class="mui-card" style="margin-top: 1px;margin-right: 0px;float:left;width:46%;">
+					<div style="margin-top: 8px; margin-bottom: 2px;">
+						<div style="margin-bottom: 8px;">
+							<a style="margin-left: 15px; color: #000000;"><img src="img/sx/jxdg.png" style="margin-right: 7px; margin-bottom: -10px; width: 30px;height: 30px;" />行走</a>
+						</div>
+						<div style="margin-top: -2px;">
+							<a style="margin-left: 15px; color: #000000; font-weight: 700; font-size: 25px;">8.2</a>
+							<a style="margin-left: 7px; color: #70C6AC;">公里</a>
+						</div>
+					</div>
+				</div>
+				<!-- 第二块右三 -->
+				<div class="mui-card" style="margin-top: 1px;margin-left: 0px;float:right;width:46%;">
+					<div style="margin-top: 8px; margin-bottom: 2px;">
+						<div style="margin-bottom: 8px;">
+							<a style="margin-left: 15px; color: #000000;"><img src="img/sx/njb.png" style="margin-right: 7px; margin-bottom: -10px; width: 30px;height: 30px;" />骑行</a>
+						</div>
+						<div style="margin-top: -2px;">
+							<a style="margin-left: 15px; color: #000000; font-weight: 700; font-size: 25px;">59.6</a>
+							<a style="margin-left: 7px; color: #70C6AC;">公里</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 第三块 -->
+			<div class="mui-card" style="margin-top: 1px;float:left;width: 95%;">
+				<div style="margin-top: 10px; margin-bottom: 10px;">
+					<div style="margin-bottom: 10px;">
+						<a style="margin-left: 15px; color: #000000;">每周目标</a>
+						<button id="butt2" style="margin-top: 7px; padding-bottom: 3px; border-radius: 16px; border: 0px; margin-left: 200px; background-color: #24C788; color: white;"
+						 type="button">调整目标</button>
+					</div>
+					<div style="margin-top: -20px;">
+						<a style="margin-left: 15px; color: #70C6AC; font-size:12px;">目标7天，每天30分钟</a>
+					</div>
+					<div style="margin-top: 20px;margin-bottom: 1px;margin-left: 10px;">
+						<img src="img/dui.png" style="margin-left: 12px;width: 27px;height: 27px;" />
+						<img src="img/dui.png" style="margin-left: 20px;width: 27px;height: 27px;" />
+						<img src="img/cuo.png" style="margin-left: 20px;width: 27px;height: 27px;" />
+						<img src="img/dui.png" style="margin-left: 20px;width: 27px;height: 27px;" />
+						<img src="img/cuo.png" style="margin-left: 18px;width: 27px;height: 27px;" />
+						<img src="img/cuo.png" style="margin-left: 20px;width: 27px;height: 27px;" />
+						<img src="img/dui.png" style="margin-left: 19px;width: 27px;height: 27px;" />
+					</div>
+					<div style="margin-top: -8px; margin-bottom: 9px; font-size:12px;">
+						<a style="margin-left: 24px; color: #70C6AC;">周一</a>
+						<a style="margin-left: 23px; color: #70C6AC;">周二</a>
+						<a style="margin-left: 23px; color: #70C6AC;">周三</a>
+						<a style="margin-left: 23px; color: #70C6AC;">周四</a>
+						<a style="margin-left: 23px; color: #70C6AC;">周五</a>
+						<a style="margin-left: 23px; color: #70C6AC;">周六</a>
+						<a style="margin-left: 23px; color: #70C6AC;">周日</a>
+					</div>
+				</div>
+			</div>
+			<!-- 第四块 -->
+			<div class="mui-card" style="margin-top: 1px;float:left;width: 95%;background-color:rgb(113,199,172)">
+				<div style="margin-top: 10px; margin-bottom: 10px;">
+					<div id="butt" style="margin-bottom: 10px;">
+						<a style="margin-left: 15px; color: white;"><img src="img/sx/ryb.png" style="margin-right: 7px; margin-bottom: -10px; width: 30px;height: 30px;" />今日步数</a>
+						<img src="img/jia.png" style="margin-left: 190px; margin-bottom: -45px; width: 50px;height: 50px;" />
+					</div>
+					<div>
+						<a style="margin-left: 15px; color: white; font-weight: 700; font-size: 25px;">10,382</a>
+						<a style="margin-left: 7px; color: rgb(180,198,229)">步</a>
+					</div>
+				</div>
+			</div>
+			<!-- 第五块 -->
+			<div class="mui-card" style="margin-top: 1px;float:left;width: 95%;background-color: rgb(120,118,207)">
+				<div style="margin-top: 10px; margin-bottom: 10px;">
+					<div id="butt1" style="margin-bottom: 10px;">
+						<a style="margin-left: 15px; color: white;"><img src="img/sx/msdg.png" style="margin-right: 7px; margin-bottom: -10px; width: 30px;height: 30px;" />体侧评分</a>
+						<img src="img/jia.png" style="margin-left: 190px; margin-bottom: -45px; width: 50px;height: 50px;" />
+					</div>
+					<div>
+						<a style="margin-left: 17px; color: rgb(197,195,219)">来测一测自己的运动能力</a>
+					</div>
+				</div>
+			</div>
+			<!-- 第六块 -->
+			<div class="mui-card" style="margin-top: 1px;float:left;width: 95%;">
+				<div style="margin-top: 10px; margin-bottom: 10px;">
+					<div style="margin-bottom: 10px;">
+						<a style="margin-left: 15px; color: black;"><img src="img/sx/bg.png" style="margin-right: 7px; margin-bottom: -10px; width: 30px;height: 30px;" />身体数据</a>
+					</div>
+					<div>
+						<a style="margin-left: 19px; color:black; font-weight: 900;font-size: 20px;">55.0</a>
+						<a style="margin-left: 3px; color: #70C6AC;font-size: 12px;">体重(kg)</a>
+						<a style="margin-left: 19px; color:black; font-weight: 900;font-size: 20px;">16.71</a>
+						<a style="margin-left: 3px; color: #70C6AC;font-size: 12px;">BMI</a>
+						<a style="margin-left: 19px; color:black; font-weight: 900;font-size: 20px;">180.0</a>
+						<a style="margin-left: 3px; color: #70C6AC;font-size: 12px;">身高(cm)</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		mui.plusReady(function() {
+			var wv=plus.webview.currentWebview();
+	    	wv.setStyle({'popGesture':'close'});
+			document.getElementById("set").addEventListener("tap", function() {
+				mui.openWindow({
+					url: 'setting.html',
+					id: 'setting.html'
+				})
+			})
+			document.getElementById("information").addEventListener("tap", function() {
+				mui.openWindow({
+					url: 'information.html',
+					id: 'information.html'
+				})
+			})
+			document.getElementById("scan").addEventListener("tap", function() {
+				mui.openWindow({
+					url: 'barcode_scan.html',
+					id: 'barcode_scan.html'
+				})
+			})
+			document.getElementById("butt").addEventListener('tap', function() {
+				mui.toast('暂未开放~', {
+					type: 'div'
+				})
+			});
+			document.getElementById("butt1").addEventListener('tap', function() {
+				mui.toast('暂未开放~', {
+					type: 'div'
+				})
+			});
+			document.getElementById("butt2").addEventListener('tap', function() {
+				mui.toast('暂未开放~', {
+					type: 'div'
+				})
+			});
+		})
+	</script>
+</html>

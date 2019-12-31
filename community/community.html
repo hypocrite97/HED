@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="keywords" content="HTML, CSS, HTML5, template, corporate, jQuery, portfolio, theme, business">
+		<meta name="viewport" content="initial-scale=1, width=device-width">
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/mycss.css" rel="stylesheet" />
+		<link href="css/iconfont.css" rel="stylesheet" />
+		<style type="text/css">
+			.mui-title {
+				text-align: center;
+			}
+
+			.mui-bar .mui-title {
+				right: 115px;
+				left: 20px;
+			}
+
+			.mui-title-img {
+				margin: 6px;
+				margin-top: 10px;
+				margin-left: 8px;
+				width: 23px;
+			}
+		</style>
+	</head>
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init({
+				subpages: [{
+					url: 'community_list.html',
+					id: 'community_list.html',
+					styles: {
+						top: '35px',
+						bottom: '0px'
+					}
+				}]
+			});
+		</script>
+		<header class="mui-bar mui-bar-nav" style="background-color: white;box-shadow:0 0px 0px white;width: 100%;">
+			<h1 class="mui-title">社区</h1>
+			<!-- 搜索 -->
+			<span style="margin-left: -3px;" class="mui-icon mui-icon-search search"></span>
+			<!-- 照相 -->
+			<img id="Photograph" class="mui-title-img" align="right" src="img/Photograph.png" />
+			<!-- 加好友 -->
+			<img id="Add_friends" class="mui-title-img" align="right" src="img/Add_friends.png" />
+		</header>
+	</body>
+	<script type="text/javascript">
+		mui.plusReady(function() {
+			//搜索按钮
+			mui(".mui-bar-nav").on("tap", "span", function() {
+				mui.openWindow({
+					url: 'search.html',
+					id: 'search.html',
+					show: {
+						autoShow: true,
+						aniShow: "slide-in-left",
+						duration: 100,
+					},
+					waiting: {
+						autoShow: true,
+						title: "正在加载......"
+					},
+				})
+			});
+			//添加好友
+			document.getElementById("Add_friends").addEventListener("tap", function() {
+				mui.openWindow({
+					url: 'add.html',
+					id: 'add.html',
+					show: {
+						autoShow: true,
+						aniShow: "slide-in-left",
+						duration: 100,
+					},
+					waiting: {
+						autoShow: true,
+						title: "正在加载......"
+					},
+				})
+			});
+			document.getElementById("Photograph").addEventListener("tap", function() {
+				mui.openWindow({
+					url: 'Photograph.html',
+					id: 'Photograph.html',
+					show: {
+						autoShow: true,
+						aniShow: "slide-in-left",
+						duration: 100,
+					},
+					waiting: {
+						autoShow: true,
+						title: "正在加载......"
+					},
+				})
+			});
+		});
+	</script>
+</html>

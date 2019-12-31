@@ -1,0 +1,81 @@
+{
+  "find/find.html": {
+    "resources": [
+      "find/css/mycss.css",
+      "find/img/400x150.gif",
+      "find/img/logo.png"
+    ]
+  },
+  "community/community.html": {
+    "resources": [
+      "community/img/11.jpg",
+      "community/fonts/mui.ttf",
+      "community/js/mui.min.js",
+      "community/css/iconfont.css",
+      "community/js/iconfont.js",
+      "community/css/mycss.css",
+      "community/css/mui.min.css",
+      "community/css/demo.css"
+    ]
+  },
+  "index.html": {
+    "resources": [
+      "js/mui.min.js",
+      "me/me.html",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "find/find.html",
+      "community/community.html",
+      "me/me.html",
+      "motion/motion.html"
+    ]
+  },
+  "me/me.html": {
+    "resources": [
+      "me/css/mui.css",
+      "me/img/1.jpg",
+      "me/img/set.png",
+      "me/fonts/mui.ttf",
+      "me/js/mui.js",
+      "me/img/scan.png",
+      "me/img/information.png"
+    ]
+  },
+  "motion/motion.html": {
+    "resources": [
+      "motion/img/feibu.png",
+      "motion/img/yangwoqizuo.png",
+      "motion/img/jianshen3.jpg",
+      "motion/img/shezhi.png",
+      "motion/img/jianshen4.jpg",
+      "motion/img/fubu.png",
+      "motion/img/paobuji.jpg",
+      "motion/img/shendun.png",
+      "motion/img/jingbu.png",
+      "motion/img/jianshen.jpg",
+      "motion/img/yaobu.png",
+      "motion/img/yundong.png",
+      "motion/img/shouyetouxiang.jpg",
+      "motion/img/jianshen2.jpg",
+      "motion/fonts/mui.ttf",
+      "motion/img/jianshen1.jpg",
+      "motion/img/pingbanzhicheng.png",
+      "motion/img/quanshen.png",
+      "motion/img/xiongbu.png",
+      "motion/img/ditu.png",
+      "motion/img/pao.png",
+      "motion/img/jianshenke.jpg",
+      "motion/img/tunbu.png",
+      "motion/img/yintixiangshang.png",
+      "motion/img/fuwocheng.png",
+      "motion/js/mui.min.js",
+      "motion/img/shoubi.png",
+      "motion/img/ad1.png",
+      "motion/img/kaluli.png",
+      "motion/css/mui.min.css",
+      "motion/css/mycss.css"
+    ]
+  }
+}

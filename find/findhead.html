@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link href="css/mycss.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init({
+				gestureConfig:{
+					doubletap:true,
+				},
+				subpages:[{
+					url:'find.html',
+					id:'find.html',
+					styles:{
+						top:'44px',
+						bottom:'0px'
+					}
+				}]
+			});
+		</script>
+		<header class="mui-bar mui-bar-nav">
+		    <h1 class="mui-title">发现</h1>
+		    <span class="mui-icon mui-icon-search search"></span>
+		</header>
+	</body>
+
+</html>
+<script type="text/javascript">
+	mui.plusReady(function(){
+		var contentWebview = null;
+		document.querySelector('header').addEventListener('doubletap',function(){
+			if(contentWebview==null){
+				contentWebview = plus.webview.currentWebview().children()[0];
+				console.log(contentWebview);
+			}
+			contentWebview.evalJS("mui('#refreshContainer').pullRefresh().scrollTo(0,0,100)");
+		}) 
+	})
+</script>
+<script type="text/javascript">
+	mui.plusReady(function(){
+		mui(".mui-bar-nav").on("tap","span",function(){
+			mui.openWindow({
+				url:'search.html',
+				id:'search.html',
+				show:{
+					autoShow:true,
+					aniShow:"slide-in-left",
+					duration:100,
+				},
+				waiting:{
+					autoShow:true,
+					title:"正在加载......"
+				},
+			})
+		})
+	})
+</script>

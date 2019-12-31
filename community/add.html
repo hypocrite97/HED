@@ -1,0 +1,825 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/mycss.css" rel="stylesheet" />
+		<style type="text/css">
+			.mui-title {
+				text-align: center;
+			}
+
+			.mui-bar .mui-title {
+				right: 115px;
+				left: 20px;
+			}
+
+			.mui-title-img {
+				margin: 6px;
+				margin-top: 10px;
+				margin-left: 8px;
+				width: 23px;
+			}
+
+			.mui-card {
+				margin-top: -5px;
+			}
+
+			.mui-control-content {
+				margin-top: 3px;
+			}
+
+			/*.mui-title-img {
+				margin: 7px;
+				margin-top: 10px;
+				width: 23px;
+			}*/
+		</style>
+	</head>
+
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			var count = 0;
+
+			function change() {
+				if (count == 0) {
+					var a = document.getElementById("ts");
+					a.style.color = "green";
+					a.style.backgroundColor = "whitesmoke";
+					a.innerHTML = "已关注";
+					count++;
+				} else {
+					alert("取消关注成功！")
+					var a = document.getElementById("ts");
+					a.style.color = "white";
+					a.style.backgroundColor = "#4CD964";
+					a.innerHTML = "关注";
+					count = 0;
+				}
+			}
+		</script>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title" style="margin-left: 10px; text-align: left;"> &nbsp;&nbsp;添加好友</h1>
+			<span class="mui-icon mui-icon-search search"></span>
+			<img id="scan" class="mui-title-img" align="right" src="img/scan.png" />
+		</header>
+		<div class="mui-content">
+			<div style="margin-top: 0px;">
+				<ul class="mui-table-view mui-grid-view">
+					<li class="mui-table-view-cell mui-media mui-col-xs-6" style="width: 9%;"></li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-6" style="width: 27%;">
+						<img id="tongxun" class="mui-media-object" style="height:60% ; width:60%;border-radius:50px;" src="img/tongxun.png">
+						<p>通讯录好友</p>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-6" style="width: 4%;"></li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-6" style="width: 27%;">
+						<img id="weixin" class="mui-media-object" style="height:60% ; width:60%;border-radius:50px;" src="img/weixin.png">
+						<p>微信邀请</p>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-6" style="width: 4%;"></li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-6" style="width: 27%;">
+						<img id="qq" class="mui-media-object" style="height:60% ; width:60%;border-radius:50px;" src="img/QQ.png">
+						<p>QQ邀请</p>
+					</li>
+				</ul>
+			</div>
+			<div id="slider" class="mui-slider mui-fullscreen slider-tab" style="margin-top: 27%;">
+				<div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted scrollfont-color"
+				 style="background-color: white;">
+					<div class="mui-scroll motiontab">
+						<a class="mui-control-item tabitem mui-active" data-index="0">推荐</a>
+						<a class="mui-control-item tabitem" data-index="1">附近</a>
+						<a class="mui-control-item tabitem" data-index="2">专家团</a>
+						<a class="mui-control-item tabitem" data-index="3">运动员</a>
+						<a class="mui-control-item tabitem" data-index="4">健身</a>
+						<a class="mui-control-item tabitem" data-index="5">瑜伽</a>
+						<!-- <a class="mui-control-item tabitem" data-index="6">明星</a> -->
+						<!-- <a class="mui-control-item tabitem" data-index="7">测试</a> -->
+					</div>
+				</div>
+				<div class="mui-slider-group">
+					<!--首页开始-->
+					<div class="mui-slider-item mui-control-content mui-active" style="border: 0px;">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div class="mui-card">
+									<div class="mui-card-header mui-card-media" style="height: 50px;">
+										<img id="cd" src="img/2.jpg" style="width:10%;border-radius:50px;" />
+										<div class="mui-media-body" style="float:left;">
+											&nbsp;&nbsp;随心
+											<p>&nbsp;&nbsp;丰富的过每一天.快乐的看每一天</p>
+										</div>
+										<div class="aaa" style="float:right;">
+											<button id="ts" type="button" style="border-radius:10px;" class="mui-btn mui-btn-green" onclick="change()">关注</button>
+										</div>
+									</div>
+									<!--<div style="height: 2px;"></div>-->
+									<div class="mui-content-padded">
+										<ul class="mui-table-view mui-grid-view" id="loop_switch">
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="float: left;margin-left: 0px; width: 33.4%;">
+												<img class="mui-media-object" src="img/jianshen.jpg" data-preview-src="" data-preview-group="1" />
+											</li>
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="float: left; width: 33.4%;">
+												<img class="mui-media-object" src="img/jianshen4.jpg" data-preview-src="" data-preview-group="1" />
+											</li>
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="width: 33.4%;">
+												<img class="mui-media-object" src="img/kaluli.jpg" data-preview-src="" data-preview-group="1" />
+											</li>
+										</ul>
+									</div>
+									<div class="mui-card-footer">
+										<p>可能感兴趣的人</p>
+									</div>
+								</div>
+								<div class="mui-card">
+									<div class="mui-card-header mui-card-media" style="height: 50px;">
+										<img src="img/22.jpg" style="width:10%;border-radius:50px;" />
+										<div class="mui-media-body" style="float:left;">
+											&nbsp;&nbsp;璐璐
+											<p>&nbsp;&nbsp;每天坚持：戒掉拖延+健身+读书...</p>
+										</div>
+										<div class="aaa" style="float:right;">
+											<button type="button" style="border-radius:10px;" class="mui-btn mui-btn-green" onclick="change()">关注</button>
+											<!--<a href="" id="on" onclick="ch()">关注  -->
+										</div>
+									</div>
+									<div style="height: 2px;"></div>
+									<div class="mui-card-content">
+										<ul class="mui-table-view mui-grid-view">
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="float: left;margin-left: 0px; width: 33.4%;">
+												<img class="mui-media-object" src="img/run-1.jpg">
+											</li>
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="float: left; width: 33.4%;">
+												<img class="mui-media-object" src="img/run-3.jpg">
+											</li>
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="width: 33.4%;">
+												<img class="mui-media-object" src="img/run-4.jpg">
+											</li>
+										</ul>
+									</div>
+									<div class="mui-card-footer">
+										<p>HED推荐</p>
+									</div>
+								</div>
+								<div class="mui-card">
+									<div class="mui-card-header mui-card-media" style="height: 50px;">
+										<img src="img/d3.jpg" style="width:10%;border-radius:50px;" />
+										<div class="mui-media-body" style="float:left;">
+											&nbsp;&nbsp;jonse
+											<p>&nbsp;&nbsp;坚持就是胜利...</p>
+										</div>
+										<div class="aaa" style="float:right;">
+											<button type="button" style="border-radius:10px;" class="mui-btn mui-btn-green" onclick="change()">关注</button>
+										</div>
+									</div>
+									<div style="height: 2px;"></div>
+									<div class="mui-card-content">
+										<ul class="mui-table-view mui-grid-view">
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="float: left;margin-left: 0px; width: 33.4%;">
+												<img class="mui-media-object" src="img/run-2.jpg">
+											</li>
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="float: left; width: 33.4%;">
+												<img class="mui-media-object" src="img/yoga7.jpg">
+											</li>
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="width: 33.4%;">
+												<img class="mui-media-object" src="img/yoga8.jpg">
+											</li>
+										</ul>
+									</div>
+									<div class="mui-card-footer">
+										<p>可能感兴趣的人</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 附近开始 -->
+					<div class="mui-slider-item mui-control-content" style="border: 0px; ">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div class="mui-card">
+									<div class="mui-card-header mui-card-media" style="height: 50px;">
+										<img id="cd1" src="img/12.jpg" style="width:10%;border-radius:50px;" />
+										<div class="mui-media-body" style="float:left;">
+											&nbsp;&nbsp;春春
+											<p>&nbsp;&nbsp;在人生的牌局中，发牌的是上帝...</p>
+										</div>
+										<div class="aaa" style="float:right;">
+											<button type="button" style="border-radius:10px;" class="mui-btn mui-btn-green" onclick="change()">关注</button>
+											<!--<a href="" id="on" onclick="ch()">关注  -->
+										</div>
+									</div>
+									<!--<div style="height: 2px;"></div>-->
+									<div class="mui-card-content">
+										<ul class="mui-table-view mui-grid-view">
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="float: left;margin-left: 0px; width: 33.4%;">
+
+												<img class="mui-media-object" src="img/jianshen.jpg">
+
+											</li>
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="float: left; width: 33.4%;">
+
+												<img class="mui-media-object" src="img/jianshen4.jpg">
+
+											</li>
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="width: 33.4%;">
+												<img class="mui-media-object" src="img/kaluli.jpg">
+											</li>
+										</ul>
+									</div>
+									<div class="mui-card-footer">
+										<p>♂ 0.07km</p>
+									</div>
+								</div>
+								<div class="mui-card">
+									<div class="mui-card-header mui-card-media" style="height: 50px;">
+										<img src="img/mn.jpg" style="width:10%;border-radius:50px;" />
+										<div class="mui-media-body" style="float:left;">
+											&nbsp;&nbsp;linda
+											<p>&nbsp;&nbsp;运动使我快乐</p>
+										</div>
+										<div class="aaa" style="float:right;">
+											<button type="button" style="border-radius:10px;" class="mui-btn mui-btn-green" onclick="change()">关注</button>
+										</div>
+									</div>
+									<!--<div style="height: 2px;"></div>-->
+									<div class="mui-card-content">
+										<ul class="mui-table-view mui-grid-view">
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="float: left;margin-left: 0px; width: 33.4%;">
+												<img class="mui-media-object" src="img/run-1.jpg">
+											</li>
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="float: left; width: 33.4%;">
+												<img class="mui-media-object" src="img/run-3.jpg">
+											</li>
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="width: 33.4%;">
+												<img class="mui-media-object" src="img/run-4.jpg">
+											</li>
+										</ul>
+									</div>
+									<div class="mui-card-footer">
+										<p>♀ 0.14km</p>
+									</div>
+								</div>
+								<div class="mui-card">
+									<div class="mui-card-header mui-card-media" style="height: 50px;">
+										<img src="img/d1.jpg" style="width:10%;border-radius:50px;" />
+										<div class="mui-media-body" style="float:left;">
+											&nbsp;&nbsp;希恩
+											<p>&nbsp;&nbsp;快乐的看每一天</p>
+										</div>
+										<div class="aaa" style="float:right;">
+											<button type="button" style="border-radius:10px;" class="mui-btn mui-btn-green" onclick="change()">关注</button>
+											<!--<a href="" id="on" onclick="ch()">关注  -->
+										</div>
+									</div>
+									<div style="height: 2px;"></div>
+									<div class="mui-card-content">
+										<ul class="mui-table-view mui-grid-view">
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="float: left;margin-left: 0px; width: 33.4%;">
+												<img class="mui-media-object" src="img/run-2.jpg">
+											</li>
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="float: left; width: 33.4%;">
+												<img class="mui-media-object" src="img/run-5.jpg">
+											</li>
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="width: 33.4%;">
+												<img class="mui-media-object" src="img/run-6.jpg">
+											</li>
+										</ul>
+									</div>
+									<div class="mui-card-footer">
+										<p>♂ 0.15km</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 专家团-->
+					<div class="mui-slider-item mui-control-content" style="border: 0px;">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div class="mui-card">
+									<div class="mui-card-header mui-card-media" style="height: 50px;">
+										<img src="img/2.jpg" style="width:10%;border-radius:50px;" />
+										<div class="mui-media-body" style="float:left;">
+											&nbsp;&nbsp;轻重健身柔王九
+											<!--<p>&nbsp;&nbsp;丰富的过每一天.快乐的看每一天</p>-->
+										</div>
+										<div class="aaa" style="float:right;">
+											<button type="button" style="border-radius:10px;" class="mui-btn mui-btn-green" onclick="change()">关注</button>
+										</div>
+									</div>
+									<!--<div style="height: 2px;"></div>-->
+									<div class="mui-content-padded">
+										<ul class="mui-table-view mui-grid-view">
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="float: left;margin-left: 0px; width: 33.4%;">
+												<img class="mui-media-object" src="img/jianshen.jpg" data-preview-src="" data-preview-group="1" />
+											</li>
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="float: left; width: 33.4%;">
+												<img class="mui-media-object" src="img/jianshen4.jpg" data-preview-src="" data-preview-group="1" />
+											</li>
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="width: 33.4%;">
+												<img class="mui-media-object" src="img/kaluli.jpg" data-preview-src="" data-preview-group="1" />
+											</li>
+										</ul>
+									</div>
+									<!--<div class="mui-card-footer">
+										<p>可能感兴趣的人</p>
+									</div>-->
+								</div>
+								<div class="mui-card">
+									<div class="mui-card-header mui-card-media" style="height: 50px;">
+										<img src="img/22.jpg" style="width:10%;border-radius:50px;" />
+										<div class="mui-media-body" style="float:left;">
+											&nbsp;&nbsp;注册营养师陈然
+											<!--<p>&nbsp;&nbsp;每天坚持：戒掉拖延+健身+读书...</p>-->
+										</div>
+										<div class="aaa" style="float:right;">
+											<button type="button" style="border-radius:10px;" class="mui-btn mui-btn-green" onclick="change()">关注</button>
+											<!--<a href="" id="on" onclick="ch()">关注  -->
+										</div>
+									</div>
+									<!--<div style="height: 2px;"></div>-->
+									<div class="mui-card-content">
+										<ul class="mui-table-view mui-grid-view">
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="float: left;margin-left: 0px; width: 33.4%;">
+												<img class="mui-media-object" src="img/run-1.jpg">
+											</li>
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="float: left; width: 33.4%;">
+												<img class="mui-media-object" src="img/run-3.jpg">
+											</li>
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="width: 33.4%;">
+												<img class="mui-media-object" src="img/run-4.jpg">
+											</li>
+										</ul>
+									</div>
+									<!--<div class="mui-card-footer">
+										<p>HED推荐</p>
+									</div>-->
+								</div>
+								<div class="mui-card">
+									<div class="mui-card-header mui-card-media" style="height: 50px;">
+										<img src="img/d3.jpg" style="width:10%;border-radius:50px;" />
+										<div class="mui-media-body" style="float:left;">
+											&nbsp;&nbsp;训练师杨乐
+											<!--<p>&nbsp;&nbsp;坚持就是胜利...</p>-->
+										</div>
+										<div class="aaa" style="float:right;">
+											<button type="button" style="border-radius:10px;" class="mui-btn mui-btn-green" onclick="change()">关注</button>
+										</div>
+									</div>
+									<!--<div style="height: 2px;"></div>-->
+									<div class="mui-card-content">
+										<ul class="mui-table-view mui-grid-view">
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="float: left;margin-left: 0px; width: 33.4%;">
+												<img class="mui-media-object" src="img/run-2.jpg">
+											</li>
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="float: left; width: 33.4%;">
+												<img class="mui-media-object" src="img/yoga7.jpg">
+											</li>
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="width: 33.4%;">
+												<img class="mui-media-object" src="img/yoga8.jpg">
+											</li>
+										</ul>
+									</div>
+									<!--<div class="mui-card-footer">
+										<p>可能感兴趣的人</p>
+									</div>-->
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 运动员-->
+					<div class="mui-slider-item mui-control-content" style="border: 0px;">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div class="mui-card">
+									<div class="mui-card-header mui-card-media" style="height: 50px;">
+										<img src="img/12.jpg" style="width:10%;border-radius:50px;" />
+										<div class="mui-media-body" style="float:left;">
+											&nbsp;&nbsp;Amy小猪
+											<p>&nbsp;&nbsp;在人生的牌局中，发牌的是上帝...</p>
+										</div>
+										<div class="aaa" style="float:right;">
+											<button type="button" style="border-radius:10px;" class="mui-btn mui-btn-green" onclick="change()">关注</button>
+											<!--<a href="" id="on" onclick="ch()">关注  -->
+										</div>
+									</div>
+									<!--<div style="height: 2px;"></div>-->
+									<div class="mui-card-content">
+										<ul class="mui-table-view mui-grid-view">
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="float: left;margin-left: 0px; width: 33.4%;">
+												<img class="mui-media-object" src="img/jianshen.jpg">
+											</li>
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="float: left; width: 33.4%;">
+												<img class="mui-media-object" src="img/jianshen4.jpg">
+											</li>
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="width: 33.4%;">
+												<img class="mui-media-object" src="img/kaluli.jpg">
+											</li>
+										</ul>
+									</div>
+									<!--<div class="mui-card-footer">
+										<p>♂ 0.07km</p>
+									</div>-->
+								</div>
+								<div class="mui-card">
+									<div class="mui-card-header mui-card-media" style="height: 50px;">
+										<img src="img/mn.jpg" style="width:10%;border-radius:50px;" />
+										<div class="mui-media-body" style="float:left;">
+											&nbsp;&nbsp;周旋randy
+											<p>&nbsp;&nbsp;运动使我快乐</p>
+										</div>
+										<div class="aaa" style="float:right;">
+											<button type="button" style="border-radius:10px;" class="mui-btn mui-btn-green" onclick="change()">关注</button>
+										</div>
+									</div>
+									<!--<div style="height: 2px;"></div>-->
+									<div class="mui-card-content">
+										<ul class="mui-table-view mui-grid-view">
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="float: left;margin-left: 0px; width: 33.4%;">
+												<img class="mui-media-object" src="img/run-1.jpg">
+											</li>
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="float: left; width: 33.4%;">
+												<img class="mui-media-object" src="img/run-3.jpg">
+											</li>
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="width: 33.4%;">
+												<img class="mui-media-object" src="img/run-4.jpg">
+											</li>
+										</ul>
+									</div>
+									<!--<div class="mui-card-footer">
+										<p>♀ 0.14km</p>
+									</div>-->
+								</div>
+								<div class="mui-card">
+									<div class="mui-card-header mui-card-media" style="height: 50px;">
+										<img src="img/d1.jpg" style="width:10%;border-radius:50px;" />
+										<div class="mui-media-body" style="float:left;">
+											&nbsp;&nbsp;Lara殿
+											<p>&nbsp;&nbsp;快乐的看每一天</p>
+										</div>
+										<div class="aaa" style="float:right;">
+											<button type="button" style="border-radius:10px;" class="mui-btn mui-btn-green" onclick="change()">关注</button>
+											<!--<a href="" id="on" onclick="ch()">关注  -->
+										</div>
+									</div>
+									<div style="height: 2px;"></div>
+									<div class="mui-card-content">
+										<ul class="mui-table-view mui-grid-view">
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="float: left;margin-left: 0px; width: 33.4%;">
+												<img class="mui-media-object" src="img/run-2.jpg">
+											</li>
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="float: left; width: 33.4%;">
+												<img class="mui-media-object" src="img/run-5.jpg">
+											</li>
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="width: 33.4%;">
+												<img class="mui-media-object" src="img/run-6.jpg">
+											</li>
+										</ul>
+									</div>
+									<!--<div class="mui-card-footer">
+										<p>♂ 0.15km</p>
+									</div>-->
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 健身 -->
+					<div class="mui-slider-item mui-control-content" style="border: 0px;">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div class="mui-card">
+									<div class="mui-card-header mui-card-media" style="height: 50px;">
+										<img src="img/2.jpg" style="width:10%;border-radius:50px;" />
+										<div class="mui-media-body" style="float:left;">
+											&nbsp;&nbsp;小珊迪
+											<p>&nbsp;&nbsp;丰富的过每一天.快乐的看每一天</p>
+										</div>
+										<div class="aaa" style="float:right;">
+											<button type="button" style="border-radius:10px;" class="mui-btn mui-btn-green" onclick="change()">关注</button>
+										</div>
+									</div>
+									<!--<div style="height: 2px;"></div>-->
+									<div class="mui-content-padded">
+										<ul class="mui-table-view mui-grid-view">
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="float: left;margin-left: 0px; width: 33.4%;">
+												<img class="mui-media-object" src="img/jianshen.jpg" data-preview-src="" data-preview-group="1" />
+											</li>
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="float: left; width: 33.4%;">
+												<img class="mui-media-object" src="img/jianshen4.jpg" data-preview-src="" data-preview-group="1" />
+											</li>
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="width: 33.4%;">
+												<img class="mui-media-object" src="img/kaluli.jpg" data-preview-src="" data-preview-group="1" />
+											</li>
+										</ul>
+									</div>
+									<!--<div class="mui-card-footer">
+										<p>可能感兴趣的人</p>
+									</div>-->
+								</div>
+								<div class="mui-card">
+									<div class="mui-card-header mui-card-media" style="height: 50px;">
+										<img src="img/22.jpg" style="width:10%;border-radius:50px;" />
+										<div class="mui-media-body" style="float:left;">
+											&nbsp;&nbsp;浩子不胖
+											<p>&nbsp;&nbsp;每天坚持：戒掉拖延+健身+读书...</p>
+										</div>
+										<div class="aaa" style="float:right;">
+											<button type="button" style="border-radius:10px;" class="mui-btn mui-btn-green" onclick="change()">关注</button>
+											<!--<a href="" id="on" onclick="ch()">关注  -->
+										</div>
+									</div>
+									<!--<div style="height: 2px;"></div>-->
+									<div class="mui-card-content">
+										<ul class="mui-table-view mui-grid-view">
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="float: left;margin-left: 0px; width: 33.4%;">
+												<img class="mui-media-object" src="img/run-1.jpg">
+											</li>
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="float: left; width: 33.4%;">
+												<img class="mui-media-object" src="img/run-3.jpg">
+											</li>
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="width: 33.4%;">
+												<img class="mui-media-object" src="img/run-4.jpg">
+											</li>
+										</ul>
+									</div>
+									<!--<div class="mui-card-footer">
+										<p>HED推荐</p>
+									</div>-->
+								</div>
+								<div class="mui-card">
+									<div class="mui-card-header mui-card-media" style="height: 50px;">
+										<img src="img/d3.jpg" style="width:10%;border-radius:50px;" />
+										<div class="mui-media-body" style="float:left;">
+											&nbsp;&nbsp;TyraMan
+											<p>&nbsp;&nbsp;坚持就是胜利...</p>
+										</div>
+										<div class="aaa" style="float:right;">
+											<button type="button" style="border-radius:10px;" class="mui-btn mui-btn-green" onclick="change()">关注</button>
+										</div>
+									</div>
+									<!--<div style="height: 2px;"></div>-->
+									<div class="mui-card-content">
+										<ul class="mui-table-view mui-grid-view">
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="float: left;margin-left: 0px; width: 33.4%;">
+												<img class="mui-media-object" src="img/run-2.jpg">
+											</li>
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="float: left; width: 33.4%;">
+												<img class="mui-media-object" src="img/yoga7.jpg">
+											</li>
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="width: 33.4%;">
+												<img class="mui-media-object" src="img/yoga8.jpg">
+											</li>
+										</ul>
+									</div>
+									<!--<div class="mui-card-footer">
+										<p>可能感兴趣的人</p>
+									</div>-->
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 瑜伽 -->
+					<div class="mui-slider-item mui-control-content" style="border: 0px;">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div class="mui-card">
+									<div class="mui-card-header mui-card-media" style="height: 50px;">
+										<img src="img/12.jpg" style="width:10%;border-radius:50px;" />
+										<div class="mui-media-body" style="float:left;">
+											&nbsp;&nbsp;EverChan
+											<p>&nbsp;&nbsp;在人生的牌局中，发牌的是上帝...</p>
+										</div>
+										<div class="aaa" style="float:right;">
+											<button type="button" style="border-radius:10px;" class="mui-btn mui-btn-green" onclick="change()">关注</button>
+											<!--<a href="" id="on" onclick="ch()">关注  -->
+										</div>
+									</div>
+									<!--<div style="height: 2px;"></div>-->
+									<div class="mui-card-content">
+										<ul class="mui-table-view mui-grid-view">
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="float: left;margin-left: 0px; width: 33.4%;">
+												<img class="mui-media-object" src="img/jianshen.jpg">
+											</li>
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="float: left; width: 33.4%;">
+												<img class="mui-media-object" src="img/jianshen4.jpg">
+											</li>
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="width: 33.4%;">
+												<img class="mui-media-object" src="img/kaluli.jpg">
+											</li>
+										</ul>
+									</div>
+									<!--<div class="mui-card-footer">
+										<p>♂ 0.07km</p>
+									</div>-->
+								</div>
+								<div class="mui-card">
+									<div class="mui-card-header mui-card-media" style="height: 50px;">
+										<img src="img/mn.jpg" style="width:10%;border-radius:50px;" />
+										<div class="mui-media-body" style="float:left;">
+											&nbsp;&nbsp;猫姐姐18
+											<p>&nbsp;&nbsp;运动使我快乐</p>
+										</div>
+										<div class="aaa" style="float:right;">
+											<button type="button" style="border-radius:10px;" class="mui-btn mui-btn-green" onclick="change()">关注</button>
+										</div>
+									</div>
+									<!--<div style="height: 2px;"></div>-->
+									<div class="mui-card-content">
+										<ul class="mui-table-view mui-grid-view">
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="float: left;margin-left: 0px; width: 33.4%;">
+												<img class="mui-media-object" src="img/run-1.jpg">
+											</li>
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="float: left; width: 33.4%;">
+												<img class="mui-media-object" src="img/run-3.jpg">
+											</li>
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="width: 33.4%;">
+												<img class="mui-media-object" src="img/run-4.jpg">
+											</li>
+										</ul>
+									</div>
+									<!--<div class="mui-card-footer">
+										<p>♀ 0.14km</p>
+									</div>-->
+								</div>
+								<div class="mui-card">
+									<div class="mui-card-header mui-card-media" style="height: 50px;">
+										<img src="img/d1.jpg" style="width:10%;border-radius:50px;" />
+										<div class="mui-media-body" style="float:left;">
+											&nbsp;&nbsp;Y晚秋
+											<p>&nbsp;&nbsp;快乐的看每一天</p>
+										</div>
+										<div class="aaa" style="float:right;">
+											<button type="button" style="border-radius:10px;" class="mui-btn mui-btn-green" onclick="change()">关注</button>
+											<!--<a href="" id="on" onclick="ch()">关注  -->
+										</div>
+									</div>
+									<!--<div style="height: 2px;"></div>-->
+									<div class="mui-card-content">
+										<ul class="mui-table-view mui-grid-view">
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="float: left;margin-left: 0px; width: 33.4%;">
+												<img class="mui-media-object" src="img/run-2.jpg">
+											</li>
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="float: left; width: 33.4%;">
+												<img class="mui-media-object" src="img/run-5.jpg">
+											</li>
+											<li class="mui-table-view-cell mui-media mui-col-xs-6" style="width: 33.4%;">
+												<img class="mui-media-object" src="img/run-6.jpg">
+											</li>
+										</ul>
+									</div>
+									<!--<div class="mui-card-footer">
+										<p>♂ 0.15km</p>
+									</div>-->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		mui.plusReady(function() {
+			var loopFlag = false; //默认不支持轮播
+			var loopSwitch = document.getElementById('loop_switch');
+			loopSwitch.addEventListener('toggle', function(event) {
+				if (event.detail.isActive) {
+					loopFlag = true;
+				} else {
+					loopFlag = false;
+				}
+			});
+			var images = [].slice.call(document.querySelectorAll('.mui-content-padded img'));
+			var urls = [];
+			images.forEach(function(item) {
+				urls.push(item.src);
+			});
+			mui('.mui-content-padded').on('tap', 'img', function() {
+				var index = images.indexOf(this);
+				plus.nativeUI.previewImage(urls, {
+					current: index,
+					loop: loopFlag,
+					indicator: 'number'
+				});
+			});
+			//滑动切换特效
+			mui('.mui-scroll-wrapper').scroll({
+				bounce: true,
+				indicators: true,
+				deceleration: mui.os.ios ? 0.003 : 0.0009
+			});
+			//Tab栏横向滑动
+			mui('.motiontab').on('tap', '.tabitem:not(.mui-active)', function() {
+				mui('.slider-tab').slider().gotoItem(this.getAttribute('data-index'));
+			});
+			//搜索按钮
+			mui(".mui-bar-nav").on("tap", "span", function() {
+				mui.openWindow({
+					url: 'search_user.html',
+					id: 'search_user.html',
+					show: {
+						autoShow: true,
+						aniShow: "slide-in-left",
+						duration: 100,
+					},
+					waiting: {
+						autoShow: true,
+						title: "正在加载......"
+					},
+				})
+			});
+
+			//通讯录好友
+			document.getElementById("tongxun").addEventListener("tap", function() {
+				mui.openWindow({
+					url: 'indexed-list.html',
+					id: 'indexed-list.html',
+					show: {
+						autoShow: true,
+						aniShow: "slide-in-left",
+						duration: 100,
+					},
+					waiting: {
+						autoShow: true,
+						title: "正在加载......"
+					},
+				})
+			});
+			//微信邀请
+			document.getElementById("weixin").addEventListener("tap", function() {
+				mui.openWindow({
+					url: 'indexed-list-select.html',
+					id: 'indexed-list-select.html',
+					show: {
+						autoShow: true,
+						aniShow: "slide-in-left",
+						duration: 100,
+					},
+					waiting: {
+						autoShow: true,
+						title: "正在加载......"
+					},
+				})
+			});
+			//qq邀请
+			document.getElementById("qq").addEventListener("tap", function() {
+				mui.openWindow({
+					url: 'qq-list-select.html',
+					id: 'qq-list-select.html',
+					show: {
+						autoShow: true,
+						aniShow: "slide-in-left",
+						duration: 100,
+					},
+					waiting: {
+						autoShow: true,
+						title: "正在加载......"
+					},
+				})
+			});
+			//信息卡
+			//			mui(".mui-card-media").on("tap", "img", function() {
+			//				mui.openWindow({
+			//					url: 'id_card.html',
+			//					id: 'id_card.html',
+			//					show: {
+			//						autoShow: true,
+			//						aniShow: "slide-in-left",
+			//						duration: 100,
+			//					},
+			//					waiting: {
+			//						autoShow: true,
+			//						title: "正在加载......"
+			//					},
+			//				})
+			//			});
+
+			document.getElementById("scan").addEventListener("tap", function() {
+				mui.openWindow({
+					url: 'barcode_scan.html',
+					id: 'barcode_scan.html'
+				})
+			});
+			document.getElementById("cd").addEventListener("tap", function() {
+				mui.openWindow({
+					url: 'id_card.html',
+					id: 'id_card.html'
+				})
+			});
+			document.getElementById("cd1").addEventListener("tap", function() {
+				mui.openWindow({
+					url: 'id-card-1.html',
+					id: 'id-card-1.html'
+				})
+			});
+
+		});
+	</script>
+
+</html>

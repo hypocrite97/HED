@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/mycss.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<header class="mui-bar mui-bar-nav">
+		    <div class="mui-input-row mui-search">
+			    <input type="search" id="search" placeholder="大家都在搜[最易错健身动作]">
+			    <a class="mui-action-back">取消</a>
+			</div>
+		</header>
+		<div class="mui-content">
+		    <div class="hotsearch">热门搜索</div>
+		    <div class="hot-content">
+		    	<div class="hot-style"><img src="img/remensousuo.png">&nbsp;纯Keep能练成啥样</div>
+		    	<div class="hot-style"><img src="img/remensousuo.png">&nbsp;一周主食不重样</div>
+		    
+		    	<div class="hot-style"><img src="img/remensousuo.png">&nbsp;如何练好下犬式</div>
+		    	<div class="hot-style">测试身材最佳动作</div>
+		    
+		    	<div class="hot-style">学生党健身</div>
+		    	<div class="hot-style">如何上热门</div>
+		    </div>
+		</div>
+
+	</body>
+</html>
+<script type="text/javascript">
+	mui.plusReady(function () {
+	    //自动弹出搜索框
+	    function open_soft_keyboard(options){
+	    		if(plus.os.name == 'iOS'){
+	    				setTimeout(function(){
+	    				var wv_current = plus.webview.currentWebview().nativeInstanceObject();
+	    				wv_current.plusCallMethod({"setKeyboardDisplayRequiresUserAction":false});
+	    				document.querySelector(options['input']).focus();
+	    				}, 330);
+	    		}else{
+	    				setTimeout(function(){
+	    						var wv_current = plus.android.currentWebview();
+	    						plus.android.importClass(wv_current);
+	    						wv_current.requestFocus();
+	    						var Context = plus.android.importClass("android.content.Context");
+	    						var InputMethodManager = plus.android.importClass("android.view.inputmethod.InputMethodManager");
+	    						var main = plus.android.runtimeMainActivity();
+	    						var imm = main.getSystemService(Context.INPUT_METHOD_SERVICE);
+	    						imm.toggleSoftInput(0,InputMethodManager.SHOW_FORCED);
+	    						document.querySelector(options['input']).focus();
+	    				}, 330);
+	    		}
+	    }
+	    open_soft_keyboard({
+	    		input: "#search"
+	    });
+	    //侧滑返回
+	    var wv=plus.webview.currentWebview();
+	    wv.setStyle({'popGesture':'close'});
+	})
+	
+</script>

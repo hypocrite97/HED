@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Photograph</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" href="css/photo.css">
+
+		<link rel="stylesheet" type="text/css" href="css/feedback-page.css" />
+		<script type="text/javascript">
+			function sd() {
+				alert("发布成功！");
+			}
+		</script>
+	</head>
+	<body class="mui-fullscreen">
+		<!--页面主结构开始-->
+		<div id="app" class="mui-views">
+			<div class="mui-view">
+				<div class="mui-navbar">
+				</div>
+				<div class="mui-pages">
+				</div>
+			</div>
+		</div>
+		<!--页面主结构结束-->
+		<!--单页面开始-->
+		<div id="setting" class="mui-page">
+			<!--页面标题栏开始-->
+			<div class="mui-navbar-inner mui-bar mui-bar-nav" style="background-color: #EEEEEE; ">
+				<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" style="margin-left: -30px; color: black;"></a>
+				<h1 class="mui-title" style="text-align: left;margin-left: 130px;"> 新动态</h1>
+				<a id="share" style="float: right;color:lawngreen; " onclick="sd()">发布</a>
+			</div>
+			<!--页面标题栏结束-->
+			<!--页面主内容区开始-->
+			<div class="mui-page-content">
+				<div class="mui-scroll-wrapper">
+					<div id="feedback" class="mui-page feedback">
+						<div class="mui-page-content">
+							<img src="img/d3.jpg" style="width:10%;border-radius:50px;" />
+							<div class="row mui-input-row">
+								<textarea id="question" class="mui-input-clear question" placeholder="分享你的健身心得和经验吧..."></textarea>
+							</div>
+							<div id="image-list" class="row image-list"></div>
+							<div class="mui-scroll">
+								<div style="height: 11px;"></div>
+								<ul class="mui-table-view mui-table-view-chevron">
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#dynamic_1" style="margin-right: -73px;">
+											<img src="img/ph_1.png" style="width: 20px;height: 20px; margin-left: -3px;margin-right: 9px;margin-bottom: -4px;" />附近位置
+											<span style="margin-right: -25px; font-size: 12px;" class=" mui-pull-right">
+											</span>
+										</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#dynamic_2" style="margin-right: -73px;">
+											<img src="img/ph_2.png" style="width: 20px;height: 20px; margin-left: -3px;margin-right: 9px;margin-bottom: -4px;" />对谁可见
+											<span style="margin-right: -25px; font-size: 12px;" class=" mui-pull-right">公开
+											</span>
+										</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#dynamic_3" style="margin-right: -73px;">
+											<img src="img/ph_3.png" style="width: 20px;height: 20px; margin-left: -3px;margin-right: 9px;margin-bottom: -4px;" />此刻心情
+											<span style="margin-right: -25px; font-size: 12px;" class=" mui-pull-right">
+											</span>
+										</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a class="mui-navigate-right" href="#dynamic_4" style="margin-right: -73px;">
+											<img src="img/ph_4.png" style="width: 20px;height: 20px; margin-left: -3px;margin-right: 9px;margin-bottom: -4px;" />装饰模板
+											<span style="margin-right: -25px; font-size: 12px;" class=" mui-pull-right">
+											</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<!-- <p>QQ/邮箱</p> -->
+							<!-- <div class="mui-input-row">
+								<input id="contact" type="text" class="mui-input-clear  contact" placeholder="(选填,方便我们联系你 )" />
+							</div> -->
+							<!-- <button id="submit" type="button" class="mui-btn mui-btn-green">提交</button> -->
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!--页面主内容区结束-->
+		</div>
+		<!--单页面结束-->
+		<!-- 附近位置 -->
+		<div id="dynamic_1" class="mui-page">
+			<div class="mui-navbar-inner mui-bar mui-bar-nav">
+				<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" style="margin-left: -30px; color: black;"></a>
+				<h1 class="mui-title" style="text-align: left;margin-left: 25px;"> 附近位置</h1>
+			</div>
+		</div>
+		<!-- 对谁可见 -->
+		<div id="dynamic_2" class="mui-page">
+			<div class="mui-navbar-inner mui-bar mui-bar-nav">
+				<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" style="margin-left: -30px; color: black;"></a>
+				<h1 class="mui-title" style="text-align: left;margin-left: 25px;"> 对谁可见</h1>
+			</div>
+			<div class="mui-page-content">
+				<div class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell">
+								<a>公开</a>
+								<div class="mui-switch mui-active mui-switch-mini">
+									<div class="mui-switch-handle"></div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 此刻心情 -->
+		<div id="dynamic_3" class="mui-page">
+			<div class="mui-navbar-inner mui-bar mui-bar-nav">
+				<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" style="margin-left: -30px; color: black;"></a>
+				<h1 class="mui-title" style="text-align: left;margin-left: 25px;"> 此刻心情</h1>
+				<!--<p> 开心</p>-->
+			</div>
+		</div>
+		<!-- 装饰模板 -->
+		<div id="dynamic_4" class="mui-page">
+			<div class="mui-navbar-inner mui-bar mui-bar-nav">
+				<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" style="margin-left: -30px; color: black;"></a>
+				<h1 class="mui-title" style="text-align: left;margin-left: 25px;"> 装饰模板</h1>
+			</div>
+		</div>
+	</body>
+	<script src="js/mui.min.js "></script>
+	<script src="js/mui.view.js "></script>
+	<script src="js/feedback-page.js"></script>
+	<script>
+		mui.init();
+		//初始化单页view
+		var viewApi = mui('#app').view({
+			defaultPage: '#setting'
+		});
+		//初始化单页的区域滚动
+		mui('.mui-scroll-wrapper').scroll();
+		//分享操作
+		var shares = {};
+		mui.plusReady(function() {
+			plus.share.getServices(function(s) {
+				if (s && s.length > 0) {
+					for (var i = 0; i < s.length; i++) {
+						var t = s[i];
+						shares[t.id] = t;
+					}
+				}
+			}, function() {
+				console.log("获取分享服务列表失败");
+			});
+		});
+
+		setTimeout(function() {
+			defaultImg();
+			setTimeout(function() {
+				initImgPreview();
+			}, 300);
+		}, 500);
+		//分享链接点击事件
+		document.getElementById("share").addEventListener('tap', function() {
+			var ids = [{
+					id: "weixin",
+					ex: "WXSceneTimeline"
+				}, {
+					id: "sinaweibo"
+				}, {
+					id: "qq"
+				}],
+				bts = [{
+					title: "分享到微信朋友圈"
+				}, {
+					title: "分享到新浪微博"
+				}, {
+					title: "分享到QQ"
+				}];
+			plus.nativeUI.actionSheet({
+				cancel: "取消",
+				buttons: bts
+			}, function(e) {
+				var i = e.index;
+				if (i > 0) {
+					var s_id = ids[i - 1].id;
+					var share = shares[s_id];
+					if (share) {
+						if (share.authenticated) {
+							shareMessage(share, ids[i - 1].ex);
+						} else {
+							share.authorize(function() {
+								shareMessage(share, ids[i - 1].ex);
+							}, function(e) {
+								console.log("认证授权失败：" + e.code + " - " + e.message);
+							});
+						}
+					} else {
+						mui.toast("无法获取分享服务，请检查manifest.json中分享插件参数配置，并重新打包")
+					}
+				}
+			});
+		});
+
+		function shareMessage(share, ex) {
+			var msg = {
+				extra: {
+					scene: ex
+				}
+			};
+			msg.href = "www.baidu.com";
+			msg.title = "HED";
+			msg.content = "我正在体验HED，very good!";
+			if (~share.id.indexOf('weibo')) {
+				msg.content += "；体验地址：www.baidu.com";
+			}
+			msg.thumbs = ["img/1.jpg"];
+			share.send(msg, function() {
+				console.log("分享到\"" + share.description + "\"成功！ ");
+			}, function(e) {
+				console.log("分享到\"" + share.description + "\"失败: " + e.code + " - " + e.message);
+			});
+		}
+		mui.init({
+			swipeBack: true //启用右滑关闭功能
+		});
+		var info = document.getElementById("info");
+		//		document.getElementById("share").addEventListener('tap', function() {
+		//			var btnArray = ['是', '否'];
+		//			mui.confirm('是否分享给好友？', '发布成功', btnArray, function(e) {
+		//				if (e.index == 0) {
+		//					info.innerText = '你刚确认MUI是个好框架';
+		//				} else {
+		//					info.innerText = 'MUI没有得到你的认可，继续加油'
+		//				}
+		//			})
+		//		});
+		//		document.getElementById("toastBtn").addEventListener('tap', function() {
+		//				mui.toast('发布成功');
+		//			});
+		var view = viewApi.view;
+		(function($) {
+			//处理view的后退与webview后退
+			var oldBack = $.back;
+			$.back = function() {
+				if (viewApi.canBack()) { //如果view可以后退，则执行view的后退
+					viewApi.back();
+				} else { //执行webview后退
+					oldBack();
+				}
+			};
+			//监听页面切换事件方案1,通过view元素监听所有页面切换事件，目前提供pageBeforeShow|pageShow|pageBeforeBack|pageBack四种事件(before事件为动画开始前触发)
+			//第一个参数为事件名称，第二个参数为事件回调，其中e.detail.page为当前页面的html对象
+			view.addEventListener('pageBeforeShow', function(e) {
+				//				console.log(e.detail.page.id + ' beforeShow');
+			});
+			view.addEventListener('pageShow', function(e) {
+				//				console.log(e.detail.page.id + ' show');
+			});
+			view.addEventListener('pageBeforeBack', function(e) {
+				//				console.log(e.detail.page.id + ' beforeBack');
+			});
+			view.addEventListener('pageBack', function(e) {
+				//				console.log(e.detail.page.id + ' back');
+			});
+		})(mui);
+	</script>
+</html>

@@ -1,0 +1,371 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+        	.tab-header{
+    width: 100%;
+    margin: 10px auto;
+    height: 50px;
+    text-align: center;
+}
+
+.tab-header ul li{
+    list-style-type: none;
+    float: left;
+    width: 49%;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.first-li{
+    border:0px  solid #e1e1e1;
+    
+}
+.second-li{
+    border:0px  solid #e1e1e1;
+    border-left: none;
+  
+}
+
+.content{
+    border: 1px solid #eee;
+    width: 100%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.first-content{
+    color: #00c679;
+}
+.second-content{
+    color: #00c679;
+}
+
+
+/*控制列表选项卡活动状态时的背景颜色*/
+.tab-header .active{
+    color:white;
+    
+}
+
+/*控制列表切换内容的显示与隐藏*/
+.first-content, .second-content{
+    display: none;
+}
+.first-content.active, .second-content.active {
+    display: block;
+}
+
+
+.chide{
+	height: 50px;
+	width: 100%;
+}
+.zhushi{
+	font-weight: bold;
+	float: left;
+	padding-left: 20px;
+	padding-top: 10px;
+}
+.pinzhong{
+	float: left;
+	margin-left: 30px;
+}
+.kcal{
+	float: left;
+	padding-top:10px;
+	padding-left: 50px;
+}
+        </style>
+	</head>
+
+	<body>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		
+		<header style="background-color: #665F6E;" class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 style="color:white;" class="mui-title">饮食指南</h1>
+		   
+		</header>
+		<div class="mui-content">
+		     <div style="background-color: #665F6E;">
+		    	<p style="padding-top: 50px; text-align: center;font-size: 30px; color:white;">1450-1520kcal</p>
+		    	<p style="color: white; text-align: center;">每日摄入热量的参考范围</p>
+		    	<p>&nbsp;</p>
+		    
+		<div class="tab-header">
+    		<ul>
+        		<li class="first-li active"><span style="font-weight:bold">今日</span></li>
+        		<li class="second-li"><span style="font-weight:bold">明日</span></li>
+    		</ul>
+		</div>
+		     </div>
+		     <!--切换的内容部分-->
+<div class="content">
+    <div class="m-box first-content active">
+    	<!--zaocan-->
+        <div class="mui-card">
+	<!--页眉，放置标题-->
+	<div class="mui-card-header">
+		<h4>早餐</h4>
+		<button style="background-color: #24C788 ;color:white">编辑</button>
+	</div>
+	<!--内容区-->
+	<div class="mui-card-content">
+	<div style="margin-top: 5px;" class="chide">
+		<div class="zhushi"><p>主食&nbsp&nbsp&nbsp&nbsp</p></div>	
+		<div class="pinzhong"><img style="float: left;" src="img/xmz.jpg" /><p  style="padding-top: 10px;padding-left: 5px;  float: left;">小米粥&nbsp&nbsp</p></div>
+			
+		<div  class="kcal"><p > 约304g</p></div>
+	</div>
+	<div style="margin-top: 5px;" class="chide">
+		<div class="zhushi"><p>肉蛋奶</p></div>	
+		<div class="pinzhong"><img style="float: left;" src="img/xmz.jpg" /><p  style="padding-top: 10px;padding-left: 5px;  float: left;">鸡蛋&nbsp&nbsp&nbsp&nbsp</p></div>
+			
+		<div class="kcal"><p>2.2个约88g</p></div>
+	</div>
+	<div style="margin-top: 5px;" class="chide">
+		<div class="zhushi"><p>蔬果&nbsp&nbsp&nbsp&nbsp</p></div>	
+		<div class="pinzhong"><img style="float: left;" src="img/xmz.jpg" /><p  style="padding-top: 10px;padding-left: 5px;  float: left;">猕猴桃</p></div>
+			
+		<div class="kcal"><p>1.1个约110g</p></div>
+	</div>
+	<div style="margin-top: 5px;" class="chide">
+		<div class="zhushi"><p>油脂&nbsp&nbsp&nbsp&nbsp</p></div>	
+		<div class="pinzhong"><img style="float: left;" src="img/xmz.jpg" /><p  style="padding-top: 10px;padding-left: 5px;  float: left;">腰果&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p></div>
+			
+		<div class="kcal"><p>约16g</p></div>
+	</div>
+	</div>
+	<!--页脚，放置补充信息或支持的操作-->
+	<div class="mui-card-footer">
+	<h4>总热量&nbsp&nbsp&nbsp&nbsp435kacl</h4> <button style="background-color: #24C788 ;color:white">打卡</button>
+	</div>
+</div>
+
+<!--wucan-->
+<div class="mui-card">
+	<!--页眉，放置标题-->
+	<div class="mui-card-header">
+		<h4>午餐</h4>
+		<button style="background-color: #24C788 ;color:white">编辑</button>
+	</div>
+	<!--内容区-->
+	<div class="mui-card-content">
+	<div style="margin-top: 5px;" class="chide">
+		<div class="zhushi"><p>主食&nbsp&nbsp&nbsp&nbsp</p></div>	
+		<div class="pinzhong"><img style="float: left;" src="img/xmz.jpg" /><p  style="padding-top: 10px;padding-left: 5px;  float: left;">通心粉&nbsp&nbsp</p></div>
+			
+		<div  class="kcal"><p > 约80g</p></div>
+	</div>
+	<div style="margin-top: 5px;" class="chide">
+		<div class="zhushi"><p>肉蛋奶</p></div>	
+		<div class="pinzhong"><img style="float: left;" src="img/xmz.jpg" /><p  style="padding-top: 10px;padding-left: 5px;  float: left;">瘦羊肉</p></div>
+			
+		<div class="kcal"><p>2.2个约88g</p></div>
+	</div>
+	<div style="margin-top: 5px;" class="chide">
+		<div class="zhushi"><p>蔬果&nbsp&nbsp&nbsp&nbsp</p></div>	
+		<div class="pinzhong"><img style="float: left;" src="img/xmz.jpg" /><p  style="padding-top: 10px;padding-left: 5px;  float: left;">黄瓜&nbsp&nbsp&nbsp&nbsp</p></div>
+			
+		<div class="kcal"><p>1.7个约340g</p></div>
+	</div>
+	<div style="margin-top: 5px;" class="chide">
+		<div class="zhushi"><p>油脂&nbsp&nbsp&nbsp&nbsp</p></div>	
+		<div class="pinzhong"><img style="float: left;" src="img/xmz.jpg" /><p  style="padding-top: 10px;padding-left: 5px;  float: left;">橄榄油&nbsp&nbsp&nbsp</p></div>
+			
+		<div class="kcal"><p>约10g</p></div>
+	</div>
+	</div>
+	<!--页脚，放置补充信息或支持的操作-->
+	<div class="mui-card-footer">
+	<h4>总热量&nbsp&nbsp&nbsp&nbsp603kacl</h4> <button style="background-color: #24C788 ;color:white">打卡</button>
+	</div>
+</div>
+
+<!--wancan-->
+<div class="mui-card">
+	<!--页眉，放置标题-->
+	<div class="mui-card-header">
+		<h4>晚餐</h4>
+		<button style="background-color: #24C788 ;color:white">编辑</button>
+	</div>
+	<!--内容区-->
+	<div class="mui-card-content">
+	<div style="margin-top: 5px;" class="chide">
+		<div class="zhushi"><p>主食&nbsp&nbsp&nbsp&nbsp</p></div>	
+		<div class="pinzhong"><img style="float: left;" src="img/xmz.jpg" /><p  style="padding-top: 10px;padding-left: 5px;  float: left;">土豆&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p></div>
+			
+		<div  class="kcal"><p > 约304g</p></div>
+	</div>
+	<div style="margin-top: 5px;" class="chide">
+		<div class="zhushi"><p>肉蛋奶</p></div>	
+		<div class="pinzhong"><img style="float: left;" src="img/xmz.jpg" /><p  style="padding-top: 10px;padding-left: 5px;  float: left;">瘦猪肉</p></div>
+			
+		<div class="kcal"><p>2.2个约88g</p></div>
+	</div>
+	<div style="margin-top: 5px;" class="chide">
+		<div class="zhushi"><p>蔬果&nbsp&nbsp&nbsp&nbsp</p></div>	
+		<div class="pinzhong"><img style="float: left;" src="img/xmz.jpg" /><p  style="padding-top: 10px;padding-left: 5px;  float: left;">菠菜&nbsp&nbsp&nbsp&nbsp</p></div>
+			
+		<div class="kcal"><p>1.1个约110g</p></div>
+	</div>
+	<div style="margin-top: 5px;" class="chide">
+		<div class="zhushi"><p>油脂&nbsp&nbsp&nbsp&nbsp</p></div>	
+		<div class="pinzhong"><img style="float: left;" src="img/xmz.jpg" /><p  style="padding-top: 10px;padding-left: 5px;  float: left;">橄榄油&nbsp&nbsp&nbsp</p></div>
+			
+		<div class="kcal"><p>约10g</p></div>
+	</div>
+	</div>
+	<!--页脚，放置补充信息或支持的操作-->
+	<div class="mui-card-footer">
+	<h4>总热量&nbsp&nbsp&nbsp&nbsp450kacl</h4> <button style="background-color: #24C788 ;color:white">打卡</button>
+	</div>
+</div>
+    </div>
+    <div class="m-box second-content">
+       <!--zaocan-->
+        <div class="mui-card">
+	<!--页眉，放置标题-->
+	<div class="mui-card-header">
+		<h4>早餐</h4>
+		<button style="background-color: #24C788 ;color:white">编辑</button>
+	</div>
+	<!--内容区-->
+	<div class="mui-card-content">
+	<div style="margin-top: 5px;" class="chide">
+		<div class="zhushi"><p>主食&nbsp&nbsp&nbsp&nbsp</p></div>	
+		<div class="pinzhong"><img style="float: left;" src="img/xmz.jpg" /><p  style="padding-top: 10px;padding-left: 5px;  float: left;">小米粥&nbsp&nbsp</p></div>
+			
+		<div  class="kcal"><p > 约304g</p></div>
+	</div>
+	<div style="margin-top: 5px;" class="chide">
+		<div class="zhushi"><p>肉蛋奶</p></div>	
+		<div class="pinzhong"><img style="float: left;" src="img/xmz.jpg" /><p  style="padding-top: 10px;padding-left: 5px;  float: left;">鸡蛋&nbsp&nbsp&nbsp&nbsp</p></div>
+			
+		<div class="kcal"><p>2.2个约88g</p></div>
+	</div>
+	<div style="margin-top: 5px;" class="chide">
+		<div class="zhushi"><p>蔬果&nbsp&nbsp&nbsp&nbsp</p></div>	
+		<div class="pinzhong"><img style="float: left;" src="img/xmz.jpg" /><p  style="padding-top: 10px;padding-left: 5px;  float: left;">猕猴桃</p></div>
+			
+		<div class="kcal"><p>1.1个约110g</p></div>
+	</div>
+	<div style="margin-top: 5px;" class="chide">
+		<div class="zhushi"><p>油脂&nbsp&nbsp&nbsp&nbsp</p></div>	
+		<div class="pinzhong"><img style="float: left;" src="img/xmz.jpg" /><p  style="padding-top: 10px;padding-left: 5px;  float: left;">腰果&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p></div>
+			
+		<div class="kcal"><p>约16g</p></div>
+	</div>
+	</div>
+	<!--页脚，放置补充信息或支持的操作-->
+	<div class="mui-card-footer">
+	<h4>总热量&nbsp&nbsp&nbsp&nbsp435kacl</h4> <button style="background-color: #24C788 ;color:white">打卡</button>
+	</div>
+</div>
+
+<!--wucan-->
+<div class="mui-card">
+	<!--页眉，放置标题-->
+	<div class="mui-card-header">
+		<h4>午餐</h4>
+		<button style="background-color: #24C788 ;color:white">编辑</button>
+	</div>
+	<!--内容区-->
+	<div class="mui-card-content">
+	<div style="margin-top: 5px;" class="chide">
+		<div class="zhushi"><p>主食&nbsp&nbsp&nbsp&nbsp</p></div>	
+		<div class="pinzhong"><img style="float: left;" src="img/xmz.jpg" /><p  style="padding-top: 10px;padding-left: 5px;  float: left;">通心粉&nbsp&nbsp</p></div>
+			
+		<div  class="kcal"><p > 约80g</p></div>
+	</div>
+	<div style="margin-top: 5px;" class="chide">
+		<div class="zhushi"><p>肉蛋奶</p></div>	
+		<div class="pinzhong"><img style="float: left;" src="img/xmz.jpg" /><p  style="padding-top: 10px;padding-left: 5px;  float: left;">瘦羊肉</p></div>
+			
+		<div class="kcal"><p>2.2个约88g</p></div>
+	</div>
+	<div style="margin-top: 5px;" class="chide">
+		<div class="zhushi"><p>蔬果&nbsp&nbsp&nbsp&nbsp</p></div>	
+		<div class="pinzhong"><img style="float: left;" src="img/xmz.jpg" /><p  style="padding-top: 10px;padding-left: 5px;  float: left;">黄瓜&nbsp&nbsp&nbsp&nbsp</p></div>
+			
+		<div class="kcal"><p>1.7个约340g</p></div>
+	</div>
+	<div style="margin-top: 5px;" class="chide">
+		<div class="zhushi"><p>油脂&nbsp&nbsp&nbsp&nbsp</p></div>	
+		<div class="pinzhong"><img style="float: left;" src="img/xmz.jpg" /><p  style="padding-top: 10px;padding-left: 5px;  float: left;">橄榄油&nbsp&nbsp&nbsp</p></div>
+			
+		<div class="kcal"><p>约10g</p></div>
+	</div>
+	</div>
+	<!--页脚，放置补充信息或支持的操作-->
+	<div class="mui-card-footer">
+	<h4>总热量&nbsp&nbsp&nbsp&nbsp603kacl</h4> <button style="background-color: #24C788 ;color:white">打卡</button>
+	</div>
+</div>
+
+<!--wancan-->
+<div class="mui-card">
+	<!--页眉，放置标题-->
+	<div class="mui-card-header">
+		<h4>晚餐</h4>
+		<button style="background-color: #24C788 ;color:white">编辑</button>
+	</div>
+	<!--内容区-->
+	<div class="mui-card-content">
+	<div style="margin-top: 5px;" class="chide">
+		<div class="zhushi"><p>主食&nbsp&nbsp&nbsp&nbsp</p></div>	
+		<div class="pinzhong"><img style="float: left;" src="img/xmz.jpg" /><p  style="padding-top: 10px;padding-left: 5px;  float: left;">土豆&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p></div>
+			
+		<div  class="kcal"><p > 约304g</p></div>
+	</div>
+	<div style="margin-top: 5px;" class="chide">
+		<div class="zhushi"><p>肉蛋奶</p></div>	
+		<div class="pinzhong"><img style="float: left;" src="img/xmz.jpg" /><p  style="padding-top: 10px;padding-left: 5px;  float: left;">瘦猪肉</p></div>
+			
+		<div class="kcal"><p>2.2个约88g</p></div>
+	</div>
+	<div style="margin-top: 5px;" class="chide">
+		<div class="zhushi"><p>蔬果&nbsp&nbsp&nbsp&nbsp</p></div>	
+		<div class="pinzhong"><img style="float: left;" src="img/xmz.jpg" /><p  style="padding-top: 10px;padding-left: 5px;  float: left;">菠菜&nbsp&nbsp&nbsp&nbsp</p></div>
+			
+		<div class="kcal"><p>1.1个约110g</p></div>
+	</div>
+	<div style="margin-top: 5px;" class="chide">
+		<div class="zhushi"><p>油脂&nbsp&nbsp&nbsp&nbsp</p></div>	
+		<div class="pinzhong"><img style="float: left;" src="img/xmz.jpg" /><p  style="padding-top: 10px;padding-left: 5px;  float: left;">橄榄油&nbsp&nbsp&nbsp</p></div>
+			
+		<div class="kcal"><p>约10g</p></div>
+	</div>
+	</div>
+	<!--页脚，放置补充信息或支持的操作-->
+	<div class="mui-card-footer">
+	<h4>总热量&nbsp&nbsp&nbsp&nbsp450kacl</h4> <button style="background-color: #24C788 ;color:white">打卡</button>
+	</div>
+</div>
+    </div>
+    </div>
+</div>
+		     
+		</div>
+	</body>
+<script type="text/javascript">
+	$(document).ready(function () {
+        $(".tab-header li").on("click", function (e) {
+            e.preventDefault();
+            var i=$(this).index();
+            $(".tab-header li").removeClass("active").eq(i).addClass("active"),
+            $(".content .m-box").removeClass("active").eq(i).addClass("active")
+        });
+    });
+</script>
+</html>

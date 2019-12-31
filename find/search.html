@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/mycss.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<header class="mui-bar mui-bar-nav">
+		    <div class="mui-input-row mui-search">
+			    <input type="search" id="search"  class="mui-input-clear" placeholder="大家都在搜[如何练好瑜伽]">
+			    <a class="mui-action-back">取消</a>
+			</div>
+		</header>
+
+	</body>
+</html>
+<script type="text/javascript">
+	//自动弹出搜索框
+	function open_soft_keyboard(options){
+	    if(plus.os.name == 'iOS'){
+	        setTimeout(function(){
+	            var wv_current = plus.webview.currentWebview().nativeInstanceObject();
+	            wv_current.plusCallMethod({"setKeyboardDisplayRequiresUserAction":false});
+	            document.querySelector(options['input']).focus();
+	        }, 330);
+	    }else{
+	        setTimeout(function(){
+	            var wv_current = plus.android.currentWebview();
+	            plus.android.importClass(wv_current);
+	            wv_current.requestFocus();
+	            var Context = plus.android.importClass("android.content.Context");
+	            var InputMethodManager = plus.android.importClass("android.view.inputmethod.InputMethodManager");
+	            var main = plus.android.runtimeMainActivity();
+	            var imm = main.getSystemService(Context.INPUT_METHOD_SERVICE);
+	            imm.toggleSoftInput(0,InputMethodManager.SHOW_FORCED);
+	            document.querySelector(options['input']).focus();
+	        }, 330);
+	    }
+	}
+	open_soft_keyboard({
+   		input: "#search"
+    });
+</script>

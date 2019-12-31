@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link href="css/iconfont.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init({
+      		subpages:[{
+      			url:'me/me.html',
+      			id :'me/me.html',
+      			styles:{
+      				top:'0px',
+      				bottom:'50px',
+      			}
+      		},{
+      			url:'community/community.html',
+      			id :'community/community.html',
+      			styles:{
+      				top:'0px',
+      				bottom:'50px',
+      			}
+      		},{
+      			url:'find/find.html',
+      			id :'find/find.html',
+      			styles:{
+      				top:'0px',
+      				bottom:'50px',
+      			}
+      		},{
+      			url:'motion/motion.html',
+      			id :'motion/motion.html',
+      			styles:{
+      				top:'0px',
+      				bottom:'50px',
+      			}
+      		}]
+      	});
+      	mui.plusReady(function(){
+      		document.getElementById("motion").addEventListener("tap",function(){
+      	    	 subView("motion/motion.html");
+      	    })
+      		document.getElementById("find").addEventListener("tap",function(){
+      	    	 subView("find/find.html");
+      	    })
+      		document.getElementById("community").addEventListener("tap",function(){
+      	    	 subView("community/community.html");
+      	    })
+      		document.getElementById("me").addEventListener("tap",function(){
+      	    	 subView("me/me.html");
+      	    })
+      		function subView(subId){
+      	  		plus.webview.getWebviewById(subId).show();
+      	  	}
+      	})
+    </script>
+</head>
+<body>
+	<nav class="mui-bar mui-bar-tab" style="background-color: white;">
+	    <a class="mui-tab-item mui-active" id="motion">
+	        <span class="mui-icon iconfont icon-shandian"></span>
+	        <span class="mui-tab-label">运动</span>
+	    </a>
+	    <a class="mui-tab-item"  id="find">
+	        <span class="mui-icon iconfont icon-faxian"></span>
+	        <span class="mui-tab-label">发现</span>
+	    </a>
+	    <a class="mui-tab-item"  id="community">
+	        <span class="mui-icon iconfont icon-shequ"></span>
+	        <span class="mui-tab-label">社区</span>
+	    </a>
+	    <a class="mui-tab-item" id="me">
+	        <span class="mui-icon iconfont icon-wo"></span>
+	        <span class="mui-tab-label">我</span>
+	    </a>
+	</nav>
+</body>
+</html>

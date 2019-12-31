@@ -1,0 +1,72 @@
+.search{
+	float: right;
+}
+#search{
+	width: 85%;
+}
+.mui-search a{
+	padding-left: 8px;
+}
+.mui-search .mui-placeholder{
+	text-align: left;
+}
+.mui-bar .mui-bar-tab{
+	float:left
+}
+
+.mui-bar .mui-bar-tab .mui-bql{
+	margin-top: auto;
+}
+
+
+.mui-media-body img{
+	border-radius: 100%;
+}
+.mui-card-header.mui-card-media .mui-media-body{
+	margin-left: 0px;
+}
+.mui-card .mui-card-tou{
+	width: 100%;
+	height: 100px;
+}
+.mui-card-left{
+	width: 45%;
+	float: left;
+	height: 100px;
+
+}
+.mui-card-right{
+	width:55%;
+	float: left;
+	height: 100px;
+}
+.mui-card-title{
+	height: 30px;
+	margin-left: 6px;
+}
+.mui-card-date{
+	height:70px;
+	width:100%;
+	margin-top:30px;
+	margin-left: 10px;
+}
+
+.card-ri{
+	width:30%;
+	float: left;
+}
+.card-yue{
+	width:70%;
+	float: left;
+}
+.card-gm{
+	margin-top:40px ;
+}
+
+.addbtn{
+	border-radius:20px ;
+	
+	
+	background-color:#24C788;
+	color: white;
+}

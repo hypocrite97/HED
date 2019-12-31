@@ -1,0 +1,236 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link href="css/mycss.css"rel="stylesheet" />
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<link href="css/mycss.css"rel="stylesheet" />
+		<style type="text/css">
+        	.tab-header{
+    width: 100%;
+    margin: 10px auto;
+    height: 50px;
+    text-align: center;
+}
+
+.tab-header ul li{
+    list-style-type: none;
+    float: left;
+    width: 49%;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.first-li{
+    border:0px  solid #e1e1e1;
+    
+}
+.second-li{
+    border:0px  solid #e1e1e1;
+    border-left: none;
+  
+}
+
+.content{
+    border: 1px solid #eee;
+    width: 100%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.first-content{
+    color: #00c679;
+}
+.second-content{
+    color: #00c679;
+}
+
+
+/*控制列表选项卡活动状态时的背景颜色*/
+.tab-header .active{
+    color:white;
+    
+}
+
+/*控制列表切换内容的显示与隐藏*/
+.first-content, .second-content{
+    display: none;
+}
+.first-content.active, .second-content.active {
+    display: block;
+}
+
+.shijian{
+	height:80px;
+	width: 100%;
+}
+
+
+        </style>
+	</head>
+	
+
+	<body>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">HEDland</h1>
+		</header>
+		<div class="mui-content">
+		    
+		    	<p style="margin-top: 15px; margin-left: 20px; size: 30px;">HEDland</p>
+		    	<div class="vedeo" style="width: 100%;padding:20px 20px 20px 20px;text-align: center;">
+		    		<video   src="video/揭秘Keep线下空间keepland丨钛媒体《在线》 标清(270P).MP4"  controls="controls"  width="100%" ></video>
+		    	</div>
+		    	<p style="margin-top:-20px; margin-left: 20px; size: 30px;">HED线下运动空间</p>
+		    	
+		    	
+		    <div class="mui-card">
+		    	<p style="padding-top: 10px; padding-left: 10px;">承德全部门店></p>
+	            <div class="tab-header">
+    				<ul>
+        		<li class="first-li active"><p>明天</p><span style="font-weight:bold; ">21</span></li>
+        		<li class="second-li"><p>后天</p><span style="font-weight:bold">22</span></li>
+        		</ul>
+				</div>
+				
+				<div class="m-box first-content active">
+					<p style="font-weight: bold; padding-left: 13px;">望京麒麟社店</p>
+					<div class="xiangmu">
+						<div class="shijian">
+							<p style="color: #00c679; padding-left: 5px;">7:00-8:00</p>
+							<div class="mui-media-body" style="float: left; padding-left: 25px;"><img src="img/mmexport1544111581310.jpg" class="mui-card-media"  style="width:40px" ></div>
+							<div style="float: left; padding-left: 30px;padding-top: 10px;"><p> BUbble Butt 蜜桃臀养成&nbsp&nbsp</p></div>
+							<button style="background-color: #24C788 ;color:white">马上预约</button>
+						</div>
+					</div>
+					<div class="xiangmu">
+						<div class="shijian">
+							<p style="color: #00c679; padding-left: 5px;">12:00-13:00</p>
+							<div class="mui-media-body" style="float: left; padding-left: 25px;"><img src="img/mmexport1544111581310.jpg" class="mui-card-media"  style="width:40px" ></div>
+							<div style="float: left; padding-left: 30px;padding-top: 10px;"><p>Dyna-balance 半球塑体&nbsp&nbsp&nbsp</p></div>
+							<button style="background-color: #24C788 ;color:white">马上预约</button>
+						</div>
+					</div>
+					<div class="xiangmu">
+						<div class="shijian">
+							<p style="color: #00c679; padding-left: 5px;">13:15-14:15</p>
+							<div class="mui-media-body" style="float: left; padding-left: 25px;"><img src="img/mmexport1544111581310.jpg" class="mui-card-media"  style="width:40px" ></div>
+							<div style="float: left; padding-left: 30px;padding-top: 10px;"><p> CoreMaster极致腹肌雕刻 </p></div>
+							<button style="background-color: #24C788 ;color:white">马上预约</button>
+						</div>
+					</div>
+					<div class="xiangmu">
+						<div class="shijian">
+							<p style="color: #00c679; padding-left: 5px;">14:30-15:30</p>
+							<div class="mui-media-body" style="float: left; padding-left: 25px;"><img src="img/mmexport1544111581310.jpg" class="mui-card-media"  style="width:40px" ></div>
+							<div style="float: left; padding-left: 30px;padding-top: 10px;"><p> BUbble Butt 蜜桃臀养成&nbsp&nbsp </p></div>
+							<button style="background-color: #24C788 ;color:white">马上预约</button>
+						</div>
+					</div>
+					<div class="xiangmu">
+						<div class="shijian">
+							<p style="color: #00c679; padding-left: 5px;">15:45-16:45</p>
+							<div class="mui-media-body" style="float: left; padding-left: 25px;"><img src="img/mmexport1544111581310.jpg" class="mui-card-media"  style="width:40px" ></div>
+							<div style="float: left; padding-left: 30px;padding-top: 10px;"><p>zumba 尊巴&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </p></div>
+							<button style="background-color: #24C788 ;color:white">马上预约</button>
+						</div>
+					</div>
+					<div class="xiangmu">
+						<div class="shijian">
+							<p style="color: #00c679; padding-left: 5px;">19:45-20:45</p>
+							<div class="mui-media-body" style="float: left; padding-left: 25px;"><img src="img/mmexport1544111581310.jpg" class="mui-card-media"  style="width:40px" ></div>
+							<div style="float: left; padding-left: 35px;padding-top: 10px;"><p> BUbble Butt 蜜桃臀养成  </p></div>
+							<button style="background-color: #24C788 ;color:white">马上预约</button>
+						</div>
+					</div>
+					
+					
+					
+					<p style="font-weight: bold; padding-left: 13px;">青年路达美中心店</p>
+					<div class="xiangmu">
+						<div class="shijian">
+							<p style="color: #00c679; padding-left: 5px;">7:00-8:00</p>
+							<div class="mui-media-body" style="float: left; padding-left: 25px;"><img src="img/mmexport1544111581310.jpg" class="mui-card-media"  style="width:40px" ></div>
+							<div style="float: left; padding-left: 30px;padding-top: 10px;"><p> BUbble Butt 蜜桃臀养成&nbsp&nbsp</p></div>
+							<button style="background-color: #24C788 ;color:white">马上预约</button>
+						</div>
+					</div>
+					<div class="xiangmu">
+						<div class="shijian">
+							<p style="color: #00c679; padding-left: 5px;">12:00-13:00</p>
+							<div class="mui-media-body" style="float: left; padding-left: 25px;"><img src="img/mmexport1544111581310.jpg" class="mui-card-media"  style="width:40px" ></div>
+							<div style="float: left; padding-left: 30px;padding-top: 10px;"><p>Dyna-balance 半球塑体&nbsp&nbsp&nbsp</p></div>
+							<button style="background-color: #24C788 ;color:white">马上预约</button>
+						</div>
+					</div>
+					<div class="xiangmu">
+						<div class="shijian">
+							<p style="color: #00c679; padding-left: 5px;">13:15-14:15</p>
+							<div class="mui-media-body" style="float: left; padding-left: 25px;"><img src="img/mmexport1544111581310.jpg" class="mui-card-media"  style="width:40px" ></div>
+							<div style="float: left; padding-left: 30px;padding-top: 10px;"><p> CoreMaster极致腹肌雕刻 </p></div>
+							<button style="background-color: #24C788 ;color:white">马上预约</button>
+						</div>
+					</div>
+					<div class="xiangmu">
+						<div class="shijian">
+							<p style="color: #00c679; padding-left: 5px;">14:30-15:30</p>
+							<div class="mui-media-body" style="float: left; padding-left: 25px;"><img src="img/mmexport1544111581310.jpg" class="mui-card-media"  style="width:40px" ></div>
+							<div style="float: left; padding-left: 30px;padding-top: 10px;"><p> BUbble Butt 蜜桃臀养成&nbsp&nbsp </p></div>
+							<button style="background-color: #24C788 ;color:white">马上预约</button>
+						</div>
+					</div>
+					<div class="xiangmu">
+						<div class="shijian">
+							<p style="color: #00c679; padding-left: 5px;">15:45-16:45</p>
+							<div class="mui-media-body" style="float: left; padding-left: 25px;"><img src="img/mmexport1544111581310.jpg" class="mui-card-media"  style="width:40px" ></div>
+							<div style="float: left; padding-left: 30px;padding-top: 10px;"><p>zumba 尊巴&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </p></div>
+							<button style="background-color: #24C788 ;color:white">马上预约</button>
+						</div>
+					</div>
+					<div class="xiangmu">
+						<div class="shijian">
+							<p style="color: #00c679; padding-left: 5px;">19:45-20:45</p>
+							<div class="mui-media-body" style="float: left; padding-left: 25px;"><img src="img/mmexport1544111581310.jpg" class="mui-card-media"  style="width:40px" ></div>
+							<div style="float: left; padding-left: 35px;padding-top: 10px;"><p> BUbble Butt 蜜桃臀养成  </p></div>
+							<button style="background-color: #24C788 ;color:white">马上预约</button>
+						</div>
+					</div>
+				</div>
+				
+				<div class="m-box second-content">
+					1
+				</div>
+				
+			</div>
+	</body>
+	<script type="text/javascript">
+		
+		
+mui.plusReady(function () {
+    var wv = plus.webview.currentWebview();
+			wv.setStyle({ 'popGesture': 'close' });
+})
+
+
+	</script>
+	<script type="text/javascript">
+	$(document).ready(function () {
+        $(".tab-header li").on("click", function (e) {
+            e.preventDefault();
+            var i=$(this).index();
+            $(".tab-header li").removeClass("active").eq(i).addClass("active"),
+            $(".content .m-box").removeClass("active").eq(i).addClass("active")
+        });
+    });
+</script>
+
+</html>

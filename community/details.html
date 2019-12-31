@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/mycss.css" rel="stylesheet" />
+		<link href="css/imageview.css" rel="stylesheet" />
+		<style type="text/css">
+			.mui-title {
+				text-align: left;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">动态详情</h1>
+		</header>
+		<div class="mui-content">
+			<!--<div class="mui-content-padded">-->
+			<!--下拉刷新容器-->
+			<!--<div class="mui-scroll-wrapper">-->
+				<div class="mui-scroll">
+					<!--数据列表-->
+					<!--<div class="mui-card-2">-->
+						<div class="mui-card">
+							<!--页眉，放置标题-->
+							<div class="mui-card-header mui-card-media">
+							<!--<div class="mui-content-padded">-->
+								<img style="border-radius: 50px;" src="img/22.jpg"/>
+								<p></p>
+								<p>&nbsp;&nbsp;&nbsp;王田</p>
+							</div>
+							<!--内容区-->
+							<div class="mui-card-content">
+								<img id="zz" style="height: 100%;width: 100%; float:left;"/>
+								<p>一、减脂的基本原理</p> 
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;减脂减重的一一个基本核心思想就是减少能量， 减少能量;就是去造能量的负平衡，每天有摄入能量，也有支出能量。摄入能量其实只有一一个来源，就是吃的东西，支出能量有很多方式。第一，维持基本生命体征的基础代谢率。第二，维持日常活动的能量消耗。第三，额外的训练。 通常情况下要想去造能量的负平衡，一般来讲是从两个渠道去展开，一个渠道就是少吃，另一个渠道就是增加日常活动，增加训练。
+								<p>二、减脂的方法</p> 
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首先提倡训练。训练不仅可以让体重变轻，实现变瘦、变漂亮的结果。更重要的是它可以带来健康。想减重，无非是为了美、性感和健康。虽然饿肚子可以让体型变瘦，但是饿肚子绝对不能带来美和健康。所以首先提倡的是通过训练来减肥
+								<p>三、训练的建议 </p> 
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们提倡通过力量训练来开局，并且要求力量训练贯穿整个减脂周期，在这里推荐- -一个总分总的周期安排。
+							</div>
+							<!--页脚，放置补充信息或支持的操作-->
+							<div class="mui-card-footer">
+								<p>2018/11/02 05:59</p>
+								....
+							</div>
+						</div>
+					<!--</div>-->
+				</div>
+			</div>
+		</div>
+		<div style="height: 20px;"></div>
+		
+	</body>
+	<script src="js/mui.min.js"></script>
+	<script src="js/mui.zoom.js"></script>
+	<script src="js/mui.previewimage.js"></script>
+	<script>
+		mui.previewImage();
+	</script>
+	<script type="text/javascript">
+	mui.plusReady(function () {//mpl
+	   	var cw1 = plus.webview.currentWebview();
+	   	var imgsrc = cw1.pic;
+		var img1 = document.getElementById("zz");
+		img1.src = imgsrc;
+	})
+	</script>
+
+</html>

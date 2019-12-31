@@ -1,0 +1,734 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>information</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="keywords" content="HTML, CSS, HTML5, template, corporate, jQuery, portfolio, theme, business">
+		<meta name="viewport" content="initial-scale=1, width=device-width">
+		<link href="../motion/css/mui.css" rel="stylesheet" />
+		<link href="../motion/css/mycss.css" rel="stylesheet" />
+		<link href="css/mui.indexedlist.css" rel="stylesheet" />
+		<style type="text/css">
+			.mui-slider .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+				color: #DD524D;
+			}
+
+			.round_icon {
+				width: 12%;
+				display: flex;
+				border-radius: 50%;
+				align-items: center;
+				justify-content: center;
+				overflow: hidden;
+			}
+
+			.mui-icon-left-nav {
+				color: wheat;
+			}
+
+			.mui-pull-left {
+				left: 20px;
+			}
+
+			html,
+			body {
+				height: 100%;
+				overflow: hidden;
+			}
+
+			.mui-indexed-list {
+				height: 100%;
+			}
+
+			.mui-indexed-list-inner {
+				height: 100%;
+			}
+
+			.mui-indexed-list-bar {
+				background-color: wheat;
+			}
+
+			.mui-content {
+				height: 100%;
+			}
+
+			.wz {
+				margin-top: 12px;
+				margin-left: 60px;
+			}
+		</style>
+	</head>
+	<body>
+		<script src="../motion/js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<header class="mui-bar mui-bar-nav" style="background-color: #777777;box-shadow:0 0px 0px white;">
+			<!--搜索-->
+			<button type="button" class="mui-left mui-action-back mui-btn mui-btn-link mui-btn-nav mui-pull-left" style="color: wheat;">
+				<span class="mui-icon"></span>消息
+			</button>
+			<span class="mui-icon mui-icon-search search"></span>
+		</header>
+		<div class="mui-content">
+			<!--导航栏-->
+			<div id="slider" class="mui-slider mui-fullscreen slider-tab">
+				<div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted scrollfont-color"
+				 style="background-color: #777777;">
+					<div class="mui-scroll motiontab" style="color: wheat;">
+						<a class="mui-control-item tabitem mui-active" data-index="0">私信</a>
+						<a class="mui-control-item tabitem" data-index="1">评论</a>
+						<a class="mui-control-item tabitem" data-index="2">@我</a>
+						<a class="mui-control-item tabitem" data-index="3">粉丝</a>
+						<a class="mui-control-item tabitem" data-index="4">好友</a>
+						<a class="mui-control-item tabitem" data-index="5">HED</a>
+						<a class="mui-control-item tabitem" data-index="6">精选</a>
+					</div>
+				</div>
+				<!--分组-->
+				<div class="mui-slider-group">
+					<!--私信开始-->
+					<div class="mui-slider-item mui-control-content mui-active" style="border: 0px;">
+						<div class="mui-content">
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;" title="系统通知">
+										<img class="mui-media-object mui-pull-left round_icon" src="img/sx/bbt.png">
+										<p class="mui-media-object mui-pull-right" style="font-size:x-small; margin-right: 35px;">2018/12/16 11:25</p>
+										<div class="mui-media-body">
+											系统通知
+											<p class="mui-ellipsis">
+												男生专属塑性增肌训练营</p>
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;" title="HED_会员">
+										<img class="mui-media-object mui-pull-left round_icon" src="img/sx/bzdg.png">
+										<p class="mui-media-object mui-pull-right" style="font-size:x-small; margin-right: 35px;">2018/12/12 19:29</p>
+										<div class="mui-media-body">
+											HED_会员
+											<p class="mui-ellipsis">
+												Hi~，恭喜你被选为HED首席体验官，参与赢取奖励</p>
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;" title="HED_商城">
+										<img class="mui-media-object mui-pull-left round_icon" src="img/sx/cmj.png">
+										<p class="mui-media-object mui-pull-right" style="font-size:x-small; margin-right: 35px;">2018/11/10 14:25</p>
+										<div class="mui-media-body">
+											HED_商城
+											<p class="mui-ellipsis">
+												恭喜获得一张￥20优惠卷</p>
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;" title="HED_活动">
+										<img class="mui-media-object mui-pull-left round_icon" src="img/sx/fsmb.png">
+										<p class="mui-media-object mui-pull-right" style="font-size:x-small; margin-right: 35px;">2018/11/10 8:29</p>
+										<div class="mui-media-body">
+											HED_活动
+											<p class="mui-ellipsis">
+												养成2周运动小习惯，还能消灭小肚子，这个秘籍给你啦</p>
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;" title="HED_精选">
+										<img class="mui-media-object mui-pull-left round_icon" src="img/sx/hfb.png">
+										<p class="mui-media-object mui-pull-right" style="font-size:x-small; margin-right: 35px;">2018/11/9 14:25</p>
+										<div class="mui-media-body">
+											HED_精选
+											<p class="mui-ellipsis">
+												怎样安排健身计划，看这一篇就够了</p>
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;" title="HED_Product">
+										<img class="mui-media-object mui-pull-left round_icon" src="img/sx/mkl.png">
+										<p class="mui-media-object mui-pull-right" style="font-size:x-small; margin-right: 35px;">2018/10/7 13:14</p>
+										<div class="mui-media-body">
+											HED_Product
+											<p class="mui-ellipsis">
+												篮球爱好者们，接球！告诉我们你都喜欢它些什么</p>
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;" title="HED_课程">
+										<img class="mui-media-object mui-pull-left round_icon" src="img/sx/jxdg.png">
+										<p class="mui-media-object mui-pull-right" style="font-size:x-small; margin-right: 35px;">2018/10/9 20:20</p>
+										<div class="mui-media-body">
+											HED_课程
+											<p class="mui-ellipsis">
+												在家健身怕打扰到邻居？练这套课程绝不扰民</p>
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;" title="白芷">
+										<img class="mui-media-object mui-pull-left round_icon" src="img/sx/msdg.png">
+										<p class="mui-media-object mui-pull-right" style="font-size:x-small; margin-right: 35px;">2018/7/21 21:10</p>
+										<div class="mui-media-body">
+											白芷
+											<p class="mui-ellipsis">人面不知何处去，桃花依旧笑春风。</p>
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;">
+										<img class="mui-media-object mui-pull-left round_icon" src="img/sx/jbr.png">
+										<p class="mui-media-object mui-pull-right" style="font-size:x-small; margin-right: 35px;">2018/6/8 19:20</p>
+										<div class="mui-media-body">
+											半夏
+											<p class="mui-ellipsis">古人学问无遗力，少壮工夫老始成。</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--私信结束-->
+					<!--评论开始-->
+					<div class="mui-slider-item mui-control-content" style="border: 0px;">
+						<div class="mui-content">
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;" title="儿茶">
+										<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/QQ20180808214111.jpg">
+										<p class="mui-media-object mui-pull-right" style="font-size:x-small;">下午4:25</p>
+										<div class="mui-media-body">
+											儿茶
+											<p class="mui-ellipsis">
+												人生若只如初见，何事秋风悲画扇。</p>
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;" title="吴茱萸">
+										<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/2.jpg">
+										<p class="mui-media-object mui-pull-right" style="font-size:x-small;">下午2:37</p>
+										<div class="mui-media-body">
+											吴茱萸
+											<p class="mui-ellipsis">曾经沧海难为水，除却巫山不是云。</p>
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;" title="Catherine">
+										<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/2131231321312.jpg">
+										<p class="mui-media-object mui-pull-right" style="font-size:x-small;">上午11:07</p>
+										<div class="mui-media-body">
+											Catherine
+											<p class="mui-ellipsis">What does the bee do?</p>
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;" title="川穹">
+										<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/16335193912-40-12-.jpg">
+										<p class="mui-media-object mui-pull-right" style="font-size:x-small;">上午6:00</p>
+										<div class="mui-media-body">
+											川穹
+											<p class="mui-ellipsis">被酒莫惊春睡重，赌书消得泼茶香，当时只道是寻常。</p>
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;" title="赤石脂">
+										<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/20150516213111767.jpg">
+										<p class="mui-media-object mui-pull-right" style="font-size:x-small;">前天</p>
+										<div class="mui-media-body">
+											赤石脂
+											<p class="mui-ellipsis">黑发不知勤学早，白首方悔读书迟。</p>
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;" title="Harry">
+										<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/3.jpg">
+										<p class="mui-media-object mui-pull-right" style="font-size:x-small;">11月11日</p>
+										<div class="mui-media-body">
+											Harry
+											<p class="mui-ellipsis">What have you brought for me? </p>
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;" title="艾叶">
+										<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/2017083111342712464.jpg">
+										<p class="mui-media-object mui-pull-right" style="font-size:x-small;">12月12日</p>
+										<div class="mui-media-body">
+											艾叶
+											<p class="mui-ellipsis">纸上得来终觉浅，绝知此事要躬行。</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--评论结束-->
+					<!--@我开始-->
+					<div class="mui-slider-item mui-control-content" style="border: 0px;">
+						<div class="mui-content">
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;" title="玉竹">
+										<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/15042267789060225.jpg">
+										<p class="mui-media-object mui-pull-right" style="font-size:x-small;">10月14日</p>
+										<div class="mui-media-body">
+											玉竹
+											<p class="mui-ellipsis">苟利国家生死以，岂因祸福避趋之！</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--@我结束-->
+					<!--粉丝开始-->
+					<div class="mui-slider-item mui-control-content" style="border: 0px;">
+						<div class="mui-content">
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;" title="安息香">
+										<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/u=4095502484,4020678028&fm=173&s=74166533C5C74143047DBAFE0300C025&w=440&h=409&img.JPEG">
+										<p class="mui-media-object mui-pull-right" style="font-size:x-small;">上午9:21</p>
+										<div class="mui-media-body">
+											安息香
+											<p class="mui-ellipsis">枯藤老树昏鸦，小桥流水人家，古道西风瘦马。</p>
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;" title="Gracie">
+										<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/2017070910292069064.jpg">
+										<p class="mui-media-object mui-pull-right" style="font-size:x-small;">凌晨1:01</p>
+										<div class="mui-media-body">
+											Gracie
+											<p class="mui-ellipsis">But when the leaves hang trembling,</p>
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;" title="白芷">
+										<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/cc7ece2627396952!400x400_big.jpg">
+										<p class="mui-media-object mui-pull-right" style="font-size:x-small;">昨天</p>
+										<div class="mui-media-body">
+											白芷
+											<p class="mui-ellipsis">人面不知何处去，桃花依旧笑春风。</p>
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;" title="半夏">
+										<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/15042267788728849.jpg">
+										<p class="mui-media-object mui-pull-right" style="font-size:x-small;">前天</p>
+										<div class="mui-media-body">
+											半夏
+											<p class="mui-ellipsis">古人学问无遗力，少壮工夫老始成。</p>
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;" title="Jenson">
+										<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/2017083111342668435.jpg">
+										<p class="mui-media-object mui-pull-right" style="font-size:x-small;">10月16日</p>
+										<div class="mui-media-body">
+											Jenson
+											<p class="mui-ellipsis">Wandering, whistling to and fro</p>
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;" title="紫河车">
+										<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/2017070910292011511.jpg">
+										<p class="mui-media-object mui-pull-right" style="font-size:x-small;">10月15日</p>
+										<div class="mui-media-body">
+											紫河车
+											<p class="mui-ellipsis">云中谁寄锦书来，雁字回时，月满西楼。</p>
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;" title="玉竹">
+										<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/15042267789060225.jpg">
+										<p class="mui-media-object mui-pull-right" style="font-size:x-small;">10月14日</p>
+										<div class="mui-media-body">
+											玉竹
+											<p class="mui-ellipsis">苟利国家生死以，岂因祸福避趋之！</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--粉丝结束-->
+					<!--好友开始-->
+					<div class="mui-slider-item mui-control-content" style="border: 0px;">
+						<div class="mui-content">
+							<div id="list" class="mui-indexed-list">
+								<div class="mui-indexed-list-search mui-input-row mui-search">
+									<input type="search" class="mui-input-clear mui-indexed-list-search-input" placeholder="搜索">
+								</div>
+								<div class="mui-indexed-list-bar">
+									<a>A</a>
+									<a>B</a>
+									<a>C</a>
+									<a>D</a>
+									<a>E</a>
+									<a>F</a>
+									<a>G</a>
+									<a>H</a>
+									<a>I</a>
+									<a>J</a>
+									<a>K</a>
+									<a>L</a>
+									<a>M</a>
+									<a>N</a>
+									<a>O</a>
+									<a>P</a>
+									<a>Q</a>
+									<a>R</a>
+									<a>S</a>
+									<a>T</a>
+									<a>U</a>
+									<a>V</a>
+									<a>W</a>
+									<a>X</a>
+									<a>Y</a>
+									<a>Z</a>
+								</div>
+								<div class="mui-indexed-list-alert"></div>
+								<div class="mui-indexed-list-inner">
+									<div class="mui-indexed-list-empty-alert">没有数据</div>
+									<ul class="mui-table-view">
+										<li class="mui-table-view-cell mui-media">
+											<a href="javascript:;" title="新的朋友">
+												<img class="mui-media-object mui-pull-left round_icon" src="img/sx/bbt.png">
+												<div class="mui-media-body wz">
+													新的朋友
+												</div>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media">
+											<a href="javascript:;" title="群聊">
+												<img class="mui-media-object mui-pull-left round_icon" src="img/sx/bg.png">
+												<div class="mui-media-body wz">
+													群聊
+												</div>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media">
+											<a href="javascript:;" title="标签">
+												<img class="mui-media-object mui-pull-left round_icon" src="img/sx/bzdg.png">
+												<div class="mui-media-body wz">
+													标签
+												</div>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media">
+											<a href="javascript:;" title="公众号">
+												<img class="mui-media-object mui-pull-left round_icon" src="img/sx/cmj.png">
+												<div class="mui-media-body wz">
+													公众号
+												</div>
+											</a>
+										</li>
+									</ul>
+									<ul class="mui-table-view">
+										<li data-group="A" class="mui-table-view-divider mui-indexed-list-group">A</li>
+										<li data-value="BPL" data-tags="Aiss" class="mui-table-view-cell mui-indexed-list-item">
+											<a href="javascript:;" title="Aiss">
+												<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/16335193912-40-12-.jpg" />
+												<p class="wz">Aiss</p>
+											</a>
+										</li>
+										<li data-value="AQG" data-tags="AngNa" class="mui-table-view-cell mui-indexed-list-item">
+											<a href="javascript:;" title="昂纳">
+												<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/null-62f9cfcd201eaea7.jpg" />
+												<p class="wz">昂纳</p>
+											</a>
+										</li>
+										<li data-value="NGQ" data-tags="Amals" class="mui-table-view-cell mui-indexed-list-item">
+											<a href="javascript:;" title="Amals">
+												<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/cc7ece2627396952!400x400_big.jpg" />
+												<p class="wz">Amals</p>
+											</a>
+										</li>
+										<li data-group="B" class="mui-table-view-divider mui-indexed-list-group">B</li>
+										<li data-value="BSD" data-tags="Banana" class="mui-table-view-cell mui-indexed-list-item">
+											<a href="javascript:;" title="卟乎">
+												<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/cc7ece2627396952!400x400_big.jpg" />
+												<p class="wz">卟乎</p>
+											</a>
+										</li>
+										<li data-value="AKU" data-tags="ASha" class="mui-table-view-cell mui-indexed-list-item">
+											<a href="javascript:;" title="不素">
+												<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/15042267788728849.jpg" />
+												<p class="wz">不素</p>
+											</a>
+										</li>
+										<li data-group="C" class="mui-table-view-divider mui-indexed-list-group">C</li>
+										<li data-value="CGD" data-tags="ChangDeTaoHuaYuan" class="mui-table-view-cell mui-indexed-list-item">
+											<a href="javascript:;" title="茶多酚">
+												<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/852997273FA51BBF01E122BCED831C0E217970303.jpg" />
+												<p class="wz">茶多酚</p>
+											</a>
+										</li>
+										<li data-value="AAT" data-tags="ABu" class="mui-table-view-cell mui-indexed-list-item">
+											<a href="javascript:;" title="C位">
+												<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/2017083111342668435.jpg" />
+												<p class="wz">C位</p>
+											</a>
+										</li>
+										<li data-group="D" class="mui-table-view-divider mui-indexed-list-group">D</li>
+										<li data-value="CGQ" data-tags="ChangChunLongJiaGuoJi" class="mui-table-view-cell mui-indexed-list-item">
+											<a href="javascript:;" title="答案">
+												<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/2017070910292069064.jpg" />
+												<p class="wz">答案</p>
+											</a>
+										</li>
+										<li data-group="E" class="mui-table-view-divider mui-indexed-list-group">E</li>
+										<li data-value="CGQ" data-tags="ChangChunLongJiaGuoJi" class="mui-table-view-cell mui-indexed-list-item">
+											<a href="javascript:;" title="饿">
+												<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/2017070910292069064.jpg" />
+												<p class="wz">饿</p>
+											</a>
+										</li>
+										<li data-group="F" class="mui-table-view-divider mui-indexed-list-group">F</li>
+										<li data-value="CGQ" data-tags="ChangChunLongJiaGuoJi" class="mui-table-view-cell mui-indexed-list-item">
+											<a href="javascript:;" title="否认">
+												<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/2017070910292069064.jpg" />
+												<p class="wz">否认</p>
+											</a>
+										</li>
+										<li data-group="G" class="mui-table-view-divider mui-indexed-list-group">G</li>
+										<li data-value="CGQ" data-tags="ChangChunLongJiaGuoJi" class="mui-table-view-cell mui-indexed-list-item">
+											<a href="javascript:;" title="过渡">
+												<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/2017070910292069064.jpg" />
+												<p class="wz">过渡</p>
+											</a>
+										</li>
+										<li data-group="H" class="mui-table-view-divider mui-indexed-list-group">H</li>
+										<li data-value="CGQ" data-tags="ChangChunLongJiaGuoJi" class="mui-table-view-cell mui-indexed-list-item">
+											<a href="javascript:;" title="乎乎">
+												<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/2017070910292069064.jpg" />
+												<p class="wz">乎乎</p>
+											</a>
+										</li>
+										<li data-group="J" class="mui-table-view-divider mui-indexed-list-group">J</li>
+										<li data-value="CGQ" data-tags="ChangChunLongJiaGuoJi" class="mui-table-view-cell mui-indexed-list-item">
+											<a href="javascript:;" title="简介">
+												<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/2017070910292069064.jpg" />
+												<p class="wz">简介</p>
+											</a>
+										</li>
+										<li data-group="K" class="mui-table-view-divider mui-indexed-list-group">K</li>
+										<li data-value="CGQ" data-tags="ChangChunLongJiaGuoJi" class="mui-table-view-cell mui-indexed-list-item">
+											<a href="javascript:;" title="看看">
+												<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/2017070910292069064.jpg" />
+												<p class="wz">看看</p>
+											</a>
+										</li>
+										<li data-group="L" class="mui-table-view-divider mui-indexed-list-group">L</li>
+										<li data-value="CGQ" data-tags="ChangChunLongJiaGuoJi" class="mui-table-view-cell mui-indexed-list-item">
+											<a href="javascript:;" title="浏览">
+												<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/2017070910292069064.jpg" />
+												<p class="wz">浏览</p>
+											</a>
+										</li>
+										<li data-group="M" class="mui-table-view-divider mui-indexed-list-group">M</li>
+										<li data-value="CGQ" data-tags="ChangChunLongJiaGuoJi" class="mui-table-view-cell mui-indexed-list-item">
+											<a href="javascript:;" title="命名">
+												<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/2017070910292069064.jpg" />
+												<p class="wz">命名</p>
+											</a>
+										</li>
+										<li data-group="N" class="mui-table-view-divider mui-indexed-list-group">N</li>
+										<li data-value="CGQ" data-tags="ChangChunLongJiaGuoJi" class="mui-table-view-cell mui-indexed-list-item">
+											<a href="javascript:;" title="南宁">
+												<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/2017070910292069064.jpg" />
+												<p class="wz">南宁</p>
+											</a>
+										</li>
+										<li data-group="P" class="mui-table-view-divider mui-indexed-list-group">P</li>
+										<li data-value="CGQ" data-tags="ChangChunLongJiaGuoJi" class="mui-table-view-cell mui-indexed-list-item">
+											<a href="javascript:;" title="匹配">
+												<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/2017070910292069064.jpg" />
+												<p class="wz">匹配</p>
+											</a>
+										</li>
+										<li data-group="Q" class="mui-table-view-divider mui-indexed-list-group">Q</li>
+										<li data-value="CGQ" data-tags="ChangChunLongJiaGuoJi" class="mui-table-view-cell mui-indexed-list-item">
+											<a href="javascript:;" title="请求">
+												<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/2017070910292069064.jpg" />
+												<p class="wz">请求</p>
+											</a>
+										</li>
+										<li data-group="R" class="mui-table-view-divider mui-indexed-list-group">R</li>
+										<li data-value="CGQ" data-tags="ChangChunLongJiaGuoJi" class="mui-table-view-cell mui-indexed-list-item">
+											<a href="javascript:;" title="融入">
+												<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/2017070910292069064.jpg" />
+												<p class="wz">融入</p>
+											</a>
+										</li>
+										<li data-group="S" class="mui-table-view-divider mui-indexed-list-group">S</li>
+										<li data-value="CGQ" data-tags="ChangChunLongJiaGuoJi" class="mui-table-view-cell mui-indexed-list-item">
+											<a href="javascript:;" title="所示">
+												<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/2017070910292069064.jpg" />
+												<p class="wz">所示</p>
+											</a>
+										</li>
+										<li data-group="T" class="mui-table-view-divider mui-indexed-list-group">T</li>
+										<li data-value="CGQ" data-tags="ChangChunLongJiaGuoJi" class="mui-table-view-cell mui-indexed-list-item">
+											<a href="javascript:;" title="天天">
+												<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/2017070910292069064.jpg" />
+												<p class="wz">天天</p>
+											</a>
+										</li>
+										<li data-group="W" class="mui-table-view-divider mui-indexed-list-group">W</li>
+										<li data-value="CGQ" data-tags="ChangChunLongJiaGuoJi" class="mui-table-view-cell mui-indexed-list-item">
+											<a href="javascript:;" title="稳稳">
+												<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/2017070910292069064.jpg" />
+												<p class="wz">稳稳</p>
+											</a>
+										</li>
+										<li data-group="X" class="mui-table-view-divider mui-indexed-list-group">X</li>
+										<li data-value="CGQ" data-tags="ChangChunLongJiaGuoJi" class="mui-table-view-cell mui-indexed-list-item">
+											<a href="javascript:;" title="信息">
+												<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/2017070910292069064.jpg" />
+												<p class="wz">信息</p>
+											</a>
+										</li>
+										<li data-group="Y" class="mui-table-view-divider mui-indexed-list-group">Y</li>
+										<li data-value="CGQ" data-tags="ChangChunLongJiaGuoJi" class="mui-table-view-cell mui-indexed-list-item">
+											<a href="javascript:;" title="语言">
+												<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/2017070910292069064.jpg" />
+												<p class="wz">语言</p>
+											</a>
+										</li>
+										<li data-group="Z" class="mui-table-view-divider mui-indexed-list-group">Z</li>
+										<li data-value="CGQ" data-tags="ChangChunLongJiaGuoJi" class="mui-table-view-cell mui-indexed-list-item">
+											<a href="javascript:;" title="制作">
+												<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/2017070910292069064.jpg" />
+												<p class="wz">制作</p>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--好友结束-->
+					<!--HED开始-->
+					<div class="mui-slider-item mui-control-content" style="border: 0px;">
+						<div class="mui-content">
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;" title="威灵仙">
+										<img class="mui-media-object mui-pull-left" src="img/sx/jbr.png">
+										<p class="mui-media-object mui-pull-right" style="font-size:x-small;">10月12日</p>
+										<div class="mui-media-body">
+											威灵仙
+											<p class="mui-ellipsis">男儿何不带吴钩，收取关山五十州。</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--HED结束-->
+					<!--精选开始-->
+					<div class="mui-slider-item mui-control-content" style="border: 0px;">
+						<div class="mui-content">
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;" title="桔梗">
+										<img class="mui-media-object mui-pull-left round_icon" src="img/sub1/QQ20180808214106.jpg">
+										<p class="mui-media-object mui-pull-right" style="font-size:x-small;">10月13日</p>
+										<div class="mui-media-body">
+											桔梗
+											<p class="mui-ellipsis">呜呼！楚虽三户能亡秦，岂有堂堂中国空无人！</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--精选结束-->
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="js/mui.indexedlist.js"></script>
+<script type="text/javascript">
+	mui.plusReady(function() {
+		var wv=plus.webview.currentWebview();
+	    wv.setStyle({'popGesture':'close'});
+		//搜索按钮
+		mui(".mui-bar-nav").on("tap", "span", function() {
+			mui.openWindow({
+				url: 'search.html',
+				id: 'search.html',
+				show: {
+					autoShow: true,
+					aniShow: "slide-in-left",
+					duration: 100,
+				},
+				waiting: {
+					autoShow: true,
+					title: "正在加载......"
+				},
+			})
+		})
+		//滑动切换特效
+		mui('.mui-scroll-wrapper').scroll({
+			bounce: true,
+			indicators: true,
+			deceleration: mui.os.ios ? 0.003 : 0.0009
+		});
+		//Tab栏横向滑动
+		mui('.motiontab').on('tap', '.tabitem:not(.mui-active)', function() {
+			mui('.slider-tab').slider().gotoItem(this.getAttribute('data-index'));
+		});
+	})
+	mui(".mui-table-view-cell").on("tap", "a", function() {
+		var title = this.getAttribute("title");
+		var src = this.children[0].getAttribute("src");
+		mui.openWindow({
+			url: 'im-chat.html',
+			id: 'im-chat.html',
+			show: {
+				autoShow: true,
+				aniShow: "slide-in-left",
+				duration: 100,
+			},
+			waiting: {
+				autoshow: true,
+				title: '正在加载',
+			},
+			styles: {
+				// 					top: '40px',
+				// 					bottom: '50px'
+			},
+			extras: {
+				title: title,
+				src: src
+			}
+		})
+	})
+	mui.ready(function() {
+		//				var header = document.querySelector('header.mui-bar');
+		var list = document.getElementById('list');
+		//calc hieght
+		list.style.height = (document.body.offsetHeight) + 'px';
+		//create
+		window.indexedList = new mui.IndexedList(list);
+	});
+</script>
